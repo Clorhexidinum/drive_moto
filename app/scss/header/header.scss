@@ -1,0 +1,37 @@
+.header {
+  &__top-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 122px;
+    font-family: "SFProDisplay-Bold", sans-serif;
+    font-weight: 700;
+  }
+
+  &__box {
+    display: flex;
+    align-items: baseline;
+  }
+
+  &__adress {
+    margin-right: 60px;
+    width: 265px;
+    padding-left: 30px;
+    position: relative;
+  }
+
+  &__adress::before {
+    content: "";
+    position: absolute;
+    background-image: url('../images/adress-icon.svg');
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 40px;
+    left: 0;
+    top: -10px;
+  }
+
+  &__bottom {
+    margin-bottom: 80px;
+  }
+}

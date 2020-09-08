@@ -1,0 +1,33 @@
+.user-list {
+  display: flex;
+  margin-right: 15px;
+
+  &__item {
+    display: inline-block;
+    padding-right: 10px;
+  }
+
+  &__link {
+    position: relative;
+  }
+
+  &__icon:hover {
+    fill: #1C62CD;
+  }
+
+  &__num {
+    position: absolute;
+    font-family: "SFProDisplay-Medium", sans-serif;
+    font-weight: 500;
+    color: #ffffff;
+    font-size: 10px;
+    line-height: 20px;
+    width: 20px;
+    height: 20px;
+    background-color: #1C62CD;
+    text-align: center;
+    border-radius: 50%;
+    bottom: -5px;
+    right: -14px;
+  }
+}

@@ -1,0 +1,59 @@
+.banner-slider {
+  max-width: 870px;
+  position: relative;
+
+  &__img {
+    object-fit: cover;
+    min-height: 400px;
+  }
+
+  &__btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+    z-index: 5;
+
+    &--prev {
+      left: 20px;
+    }
+
+    &--next {
+      right: 20px;
+    }
+  }
+
+  &__dots {
+    position: absolute;
+    bottom: 40px;
+    left: 0;
+    right: 0;
+    text-align: center;
+  }
+
+  &__dots li {
+    display: inline-block;
+    padding: 0 5px;
+  }
+
+  &__dots button {
+    padding: 0;
+    margin: 0;
+    font-size: 0;
+    width: 11px;
+    height: 11px;
+    border: 1px solid #ffffff;
+    border-radius: 50%;
+    cursor: pointer;
+    outline: none;
+    background-color: transparent;
+  }
+}
+
+.slick-active button {
+  background-color: #ffffff;
+}

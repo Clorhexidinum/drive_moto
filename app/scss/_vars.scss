@@ -1,0 +1,64 @@
+%ubuntu-light {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 300;
+}
+
+%ubuntu-regular {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 400;
+}
+
+%ubuntu-medium {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 500;
+}
+
+%ubuntu-bold {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 700;
+}
+
+%sf-regular {
+  font-family: "SFProDisplay-Regular", sans-serif;
+  font-weight: 400;
+}
+
+%sf-semibold {
+  font-family: "SFProDisplay-Semibold", sans-serif;
+  font-weight: 600;
+}
+
+/*  Colors  */
+
+$main-text: #2F3035;
+$active: #1C62CD;
+$base: #F0F0F4;
+$additional: #C4C4C4;
+
+/*  Font-weight  */
+
+$light: 300;
+$regular: 400;
+$medium: 500;
+$semibold: 600;
+$bold: 700;
+
+/*  Font-size  */
+
+$fs-small: 14px;
+$fs-small: 15px;
+$fs-medium: 18px;
+$fs-bigger: 20px;
+$fs-big: 24px;
+$fs-extra-big: 30px;
+
+
+/*  Line-height  */
+
+$lh-extra-small: 18px;
+$lh-small: 19px;
+$lh-smaller: 21px;
+$lh-medium: 24px;
+$lh-bigger: 28px;
+$lh-big: 30px;
+$lh-extra-big: 32px;
