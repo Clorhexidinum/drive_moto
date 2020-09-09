@@ -1,0 +1,21 @@
+.product-slider {
+  &__btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+    z-index: 5;
+
+    &--prev {
+      left: -40px;
+    }
+
+    &--next {
+      right: -30px;
+    }
+  }
+}
