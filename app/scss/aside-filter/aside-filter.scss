@@ -25,4 +25,60 @@
     border-bottom: 2px solid #1C62CD;
     padding-bottom: 7px;
   }
+
+  &__item-drop {
+    margin: 40px 0;
+  }
+
+  &__item-title {
+    font-family: "SFProDisplay-Semibold", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    padding-left: 26px;
+  }
+
+  &__item-title-drop {
+    position: relative;
+    cursor: pointer;
+  }
+
+  &__item-title-drop::before {
+    content: '';
+    position: absolute;
+    background-image: url('../images/arrow-down.svg');
+    left: 0;
+    bottom: 5px;
+    width: 12px;
+    height: 8px;
+    transform: rotate(0deg);
+  }
+
+  &__item-title-drop--active::before {
+    transform: rotate(180deg);
+  }
+
+  &__content {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+
+  &__content.aside-filter__content-radio {
+    flex-wrap: nowrap;
+  }
+
+  &__content-box {
+    width: 50%;
+  }
+
+  &__content-label {
+    font-size: 14px;
+    line-height: 17px;
+    cursor: pointer;
+  }
+
+  .aside-filter__item-list {
+    margin: 80px 0 40px;
+  }
 }

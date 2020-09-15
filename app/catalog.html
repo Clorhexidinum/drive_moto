@@ -5,9 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/jquery.formstyler.css">
+  <link rel="stylesheet" href="css/jquery.formstyler.theme.css">
+  <link rel="stylesheet" href="css/ion.rangeSlider.min.css">
   <link rel="stylesheet" href="css/normalize.min.css">
   <link rel="stylesheet" href="css/style.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
   <header class="header">
@@ -152,28 +155,71 @@
                   <form class="aside-filter__form">
                     <ul class="aside-filter__list">
                       <li class="aside-filter__item-drop">
-                        <p class="aside-filter__item-title">Наличие</p>
+                        <p class="aside-filter__item-title aside-filter__item-title-drop aside-filter__item-title-drop--active">Наличие</p>
                         <div class="aside-filter__content">
                           <div class="aside-filter__content-box">
-                            <label>
+                            <label class="aside-filter__content-label">
                               <input class="filter-style" type="checkbox">
                               В наличии
                             </label>
                           </div>
                           <div class="aside-filter__content-box">
-                            <label>
+                            <label class="aside-filter__content-label">
                               <input class="filter-style" type="checkbox">
                               Под заказ
                             </label>
                           </div>
                         </div>
                       </li>
-                      <li class="aside-filter__item"></li>
-                      <li class="aside-filter__item"></li>
-                      <li class="aside-filter__item"></li>
-                      <li class="aside-filter__item"></li>
-                      <li class="aside-filter__item"></li>
-                      <li class="aside-filter__item"></li>
+                      <li class="aside-filter__item-drop">
+                        <p class="aside-filter__item-title aside-filter__item-title-drop aside-filter__item-title-drop--active">Новинки</p>
+                        <div class="aside-filter__content aside-filter__content-radio">
+                          <div class="aside-filter__content-box">
+                            <label class="aside-filter__content-label">
+                              <input class="filter-style" name="radio" type="radio">
+                              Все
+                            </label>
+                          </div>
+                          <div class="aside-filter__content-box">
+                            <label class="aside-filter__content-label">
+                              <input class="filter-style" name="radio" type="radio">
+                              Новинки
+                            </label>
+                          </div>
+                          <div class="aside-filter__content-box">
+                            <label class="aside-filter__content-label">
+                              <input class="filter-style" name="radio" type="radio">
+                              Акции
+                            </label>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="aside-filter__item-drop">
+                        <p class="aside-filter__item-title aside-filter__item-title-drop aside-filter__item-title-drop--active">Цена</p>
+                        <div class="aside-filter__content">
+                          <input type="text" class="js-range-slider" name="my_range" value=""
+                            data-type="double"
+                            data-min="100000"
+                            data-max="500000"
+                            data-from="150000"
+                            data-to="275000"/>
+                        </div>
+                      </li>
+                      <li class="aside-filter__item-list">
+                        <div class="aside-filter__item-box">
+                          <p class="aside-filter__item-list-title">Мощность, л.с.</p>
+                          <select class="filter-style">
+                            <option value="90">90</option>
+                            <option value="130">130</option>
+                            <option value="154">154</option>
+                            <option value="230">230</option>
+                            <option value="300">300</option>
+                          </select>
+                        </div>
+                      </li>
+                      <li class="aside-filter__item-drop"></li>
+                      <li class="aside-filter__item-drop"></li>
+                      <li class="aside-filter__item-drop"></li>
                     </ul>
                   </form>
                 </div>
@@ -192,7 +238,7 @@
               <a class="product-item__notify-link"><span>Сообщить о поступлении</span></a>
               <a class="product-item" href="#">
                 <p class="product-item__hover-text">посмотреть товар</p>
-                <img class="product-item__img" src="../images/content/gidrotsikl-1.png" alt="">
+                <img class="product-item__img" src="images/content/gidrotsikl-1.png" alt="">
                 <h4 class="product-item__title">Гидроцикл BRP SeaDoo GTI 155hp SE Long Blue Metallic</h4>
                 <p class="product-item__price price">1 100 475 ₽</p>
                 <p class="product-item__notify-text">нет в наличии</p>
@@ -206,7 +252,7 @@
               <a class="product-item__notify-link"><span>Сообщить о поступлении</span></a>
               <a class="product-item" href="#">
                 <p class="product-item__hover-text">посмотреть товар</p>
-                <img class="product-item__img" src="../images/content/gidrotsikl-2.png" alt="">
+                <img class="product-item__img" src="images/content/gidrotsikl-2.png" alt="">
                 <h4 class="product-item__title">Гидроцикл BRP SeaDoo GTR 230hp X California green</h4>
                 <p class="product-item__price price">1 323 700 ₽</p>
                 <p class="product-item__notify-text">нет в наличии</p>
@@ -220,7 +266,7 @@
               <a class="product-item__notify-link"><span>Сообщить о поступлении</span></a>
               <a class="product-item product-item--sale" href="#">
                 <p class="product-item__hover-text">посмотреть товар</p>
-                <img class="product-item__img" src="../images/content/gidrotsikl-3.png" alt="">
+                <img class="product-item__img" src="images/content/gidrotsikl-3.png" alt="">
                 <h4 class="product-item__title">Гидроцикл BRP SeaDoo GTR 230hp X California green </h4>
                 <p class="product-item__price price">1 323 700 ₽</p>
                 <p class="product-item__notify-text">нет в наличии</p>
@@ -234,7 +280,7 @@
               <a class="product-item__notify-link"><span>Сообщить о поступлении</span></a>
               <a class="product-item product-item--sale" href="#">
                 <p class="product-item__hover-text">посмотреть товар</p>
-                <img class="product-item__img" src="../images/content/gidrotsikl-4.png" alt="">
+                <img class="product-item__img" src="images/content/gidrotsikl-4.png" alt="">
                 <h4 class="product-item__title">Гидроцикл BRP SeaDoo GTR 230hp STD Black / Gulfstream</h4>
                 <p class="product-item__price price">6 900 ₽</p>
                 <p class="product-item__notify-text">нет в наличии</p>
@@ -248,7 +294,7 @@
               <a class="product-item__notify-link"><span>Сообщить о поступлении</span></a>
               <a class="product-item " href="#">
                 <p class="product-item__hover-text">посмотреть товар</p>
-                <img class="product-item__img" src="../images/content/gidrotsikl-5.png" alt="">
+                <img class="product-item__img" src="images/content/gidrotsikl-5.png" alt="">
                 <h4 class="product-item__title">Гидроцикл BRP SeaDoo GTX 300hp LTD Liquid Metal</h4>
                 <p class="product-item__price price">1 543 000 ₽</p>
                 <p class="product-item__notify-text">нет в наличии</p>
@@ -262,7 +308,7 @@
               <a class="product-item__notify-link"><span>Сообщить о поступлении</span></a>
               <a class="product-item product-item--sale" href="#">
                 <p class="product-item__hover-text">посмотреть товар</p>
-                <img class="product-item__img" src="../images/content/gidrotsikl-6.png" alt="">
+                <img class="product-item__img" src="images/content/gidrotsikl-6.png" alt="">
                 <h4 class="product-item__title">Гидроцикл BRP SeaDoo Spark 60hp 2 up</h4>
                 <p class="product-item__price price">732 345 ₽</p>
                 <p class="product-item__notify-text">нет в наличии</p>
@@ -276,7 +322,7 @@
               <a class="product-item__notify-link"><span>Сообщить о поступлении</span></a>
               <a class="product-item" href="#">
                 <p class="product-item__hover-text">посмотреть товар</p>
-                <img class="product-item__img" src="../images/content/gidrotsikl-7.png" alt="">
+                <img class="product-item__img" src="images/content/gidrotsikl-7.png" alt="">
                 <h4 class="product-item__title">Гидроцикл BRP SeaDoo Spark GTS 90hp Rental</h4>
                 <p class="product-item__price price">857 666 ₽</p>
                 <p class="product-item__notify-text">нет в наличии</p>
@@ -290,7 +336,7 @@
               <a class="product-item__notify-link"><span>Сообщить о поступлении</span></a>
               <a class="product-item" href="#">
                 <p class="product-item__hover-text">посмотреть товар</p>
-                <img class="product-item__img" src="../images/content/gidrotsikl-8.png" alt="">
+                <img class="product-item__img" src="images/content/gidrotsikl-8.png" alt="">
                 <h4 class="product-item__title">Гидроцикл BRP SeaDoo WAKE 230hp PRO Teal blue</h4>
                 <p class="product-item__price price">1 229 711 ₽</p>
                 <p class="product-item__notify-text">нет в наличии</p>
@@ -304,7 +350,7 @@
               <a class="product-item__notify-link"><span>Сообщить о поступлении</span></a>
               <a class="product-item" href="#">
                 <p class="product-item__hover-text">посмотреть товар</p>
-                <img class="product-item__img" src="../images/content/gidrotsikl-9.png" alt="">
+                <img class="product-item__img" src="images/content/gidrotsikl-9.png" alt="">
                 <h4 class="product-item__title">Гидроцикл Spark 2-UP 900 Ho Ace Chili Pepper</h4>
                 <p class="product-item__price price">587 440 ₽</p>
                 <p class="product-item__notify-text">нет в наличии</p>
@@ -318,7 +364,7 @@
               <a class="product-item__notify-link"><span>Сообщить о поступлении</span></a>
               <a class="product-item product-item--sale" href="#">
                 <p class="product-item__hover-text">посмотреть товар</p>
-                <img class="product-item__img" src="../images/content/gidrotsikl-10.png" alt="">
+                <img class="product-item__img" src="images/content/gidrotsikl-10.png" alt="">
                 <h4 class="product-item__title">Гидроцикл Spark 2-UP 900 Ho Ace Pineapple</h4>
                 <p class="product-item__price price">587 440 ₽</p>
                 <p class="product-item__notify-text">нет в наличии</p>
@@ -332,7 +378,7 @@
               <a class="product-item__notify-link"><span>Сообщить о поступлении</span></a>
               <a class="product-item" href="#">
                 <p class="product-item__hover-text">посмотреть товар</p>
-                <img class="product-item__img" src="../images/content/gidrotsikl-11.png" alt="">
+                <img class="product-item__img" src="images/content/gidrotsikl-11.png" alt="">
                 <h4 class="product-item__title">Гидроцикл BRP Sea-doo Spark 2-UP 900 Ace Vanilla </h4>
                 <p class="product-item__price price">6 900 ₽</p>
                 <p class="product-item__notify-text">нет в наличии</p>
@@ -346,7 +392,7 @@
               <a class="product-item__notify-link"><span>Сообщить о поступлении</span></a>
               <a class="product-item" href="#">
                 <p class="product-item__hover-text">посмотреть товар</p>
-                <img class="product-item__img" src="../images/content/gidrotsikl-12.png" alt="">
+                <img class="product-item__img" src="images/content/gidrotsikl-12.png" alt="">
                 <h4 class="product-item__title">Гидроцикл Spark 3-UP 900 HO Ace IBR Blueberry</h4>
                 <p class="product-item__price price">6 900 ₽</p>
                 <p class="product-item__notify-text">нет в наличии</p>
@@ -402,22 +448,22 @@
             <ul class="footer__social-list">
               <li class="footer__social-item">
                 <a href="#">
-                  <img src="../images/instagram.svg" alt="">
+                  <img src="images/instagram.svg" alt="">
                 </a>
               </li>
               <li class="footer__social-item">
                 <a href="#">
-                  <img src="../images/vk.svg" alt="">
+                  <img src="images/vk.svg" alt="">
                 </a>
               </li>
               <li class="footer__social-item">
                 <a href="#">
-                  <img src="../images/facebook.svg" alt="">
+                  <img src="images/facebook.svg" alt="">
                 </a>
               </li>
               <li class="footer__social-item">
                 <a href="#">
-                  <img src="../images/youtube.svg" alt="">
+                  <img src="images/youtube.svg" alt="">
                 </a>
               </li>
             </ul>
@@ -433,6 +479,8 @@
   
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="js/slick.min.js"></script>
+  <script src="js/jquery.formstyler.js"></script>
+  <script src="js/ion.rangeSlider.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>

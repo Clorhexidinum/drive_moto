@@ -29,5 +29,17 @@ $(function(){
     nextArrow: '  <button class="product-slider__btn product-slider__btn--next"><img src="images/arrow-black-right.svg" alt="слайд вправо"></button>',
   });
 
-  $('.filter-style').styler();
+  $('.aside-filter__item-title-drop').on('click', function(){
+    $(this).toggleClass('aside-filter__item-title-drop--active');
+    $(this).next().slideToggle('200');
+  });
+
+  $(".js-range-slider").ionRangeSlider();
+
+  
+  $('.filter-style').styler({
+    grid: false,
+    min: 90000,
+    max: 500000,
+  });
 });

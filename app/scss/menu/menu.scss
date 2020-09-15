@@ -3,6 +3,10 @@
     display: flex;
   }
 
+  &__item:hover {
+    color: #1C62CD;
+  }
+
   &__item:not(:last-child) {
     padding-right: 50px;
   }
