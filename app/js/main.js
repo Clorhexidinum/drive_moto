@@ -29,7 +29,7 @@ $(function(){
     nextArrow: '  <button class="product-slider__btn product-slider__btn--next"><img src="images/arrow-black-right.svg" alt="слайд вправо"></button>',
   });
 
-  $('.aside-filter__item-title-drop').on('click', function(){
+  $('.aside-filter__item-title-drop, .aside-filter__extra').on('click', function(){
     $(this).toggleClass('aside-filter__item-title-drop--active');
     $(this).next().slideToggle('200');
   });
