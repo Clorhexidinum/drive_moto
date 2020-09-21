@@ -42,15 +42,30 @@
     margin-left: 10px;
   }
 
+  &__filter-btn {
+    display: flex;
+    align-items: center;
+  }
+
   &__btn-grid {
-    padding-top: 1px;
+    width: 26px;
+    height: 21px;
   }
 
   &__btn-line {
-
+    width: 26px;
+    height: 21px;
   }
 
-  
+  &__filter-button {
+    opacity: .3;
+    outline: none;
+  }
+
+  &__filter-button--active {
+    opacity: 1;
+  }
+
   &__inner {
     display: flex;
   }

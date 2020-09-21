@@ -5,11 +5,12 @@
   padding: 52px 20px 31px;
   transition: all .3s;
   min-height: 400px;
-  width: 271px;
+  width: 100%;
 
   &__wrapper {
     position: relative;
     width: 271px;
+    transition: all .3s;
 
     &.product-item__not-available .product-item__title {
       padding-bottom: 13px;
@@ -48,9 +49,15 @@
     }
   }
 
+  &__wrapper.product-item__wrapper--list{
+    width: 100%;
+  }
+
   &__title {
     font-weight: normal;
     padding: 14px 0 25px;
+    font-size: 18px;
+    line-height: 21px;
   }
   
   &__favorite {

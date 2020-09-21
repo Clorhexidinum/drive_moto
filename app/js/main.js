@@ -42,4 +42,16 @@ $(function(){
     min: 90000,
     max: 500000,
   });
+
+  $('.catalog__btn-grid').on('click', function() {
+    $(this).addClass('catalog__filter-button--active');
+    $('.catalog__btn-line').removeClass('catalog__filter-button--active');
+    $('.product-item__wrapper').removeClass('product-item__wrapper--list');
+  });
+
+  $('.catalog__btn-line').on('click', function() {
+    $(this).addClass('catalog__filter-button--active');
+    $('.catalog__btn-grid').removeClass('catalog__filter-button--active');
+    $('.product-item__wrapper').addClass('product-item__wrapper--list');
+  });
 });
