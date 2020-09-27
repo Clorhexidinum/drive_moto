@@ -1,0 +1,93 @@
+.product-card {
+  margin-bottom: 80px;
+
+  &__inner{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+  }
+
+  &__img-box {
+    width: 500px;
+    padding-top: 64px;
+    text-align: center;
+    font-family: 'Barlow', sans-serif;
+  }
+
+  &__img-box::before {
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: 0.12em;
+    padding: 13px 25px;
+    border-radius: 3px;
+  }
+
+  &__price-old {
+    font-size: 30px;
+    line-height: 44px;
+    opacity: 0.6;
+    display: inline-block;
+    background-image: url('../images/old-line.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  &__price-new {
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 48px;
+    margin-bottom: 17px;
+  }
+
+  &__link {
+    font-size: 15px;
+    line-height: 18px;
+    color: #1C62CD;
+    border-bottom: 1px solid #1C62CD;
+  }
+
+  &__content {
+    width: 570px;
+  }
+
+  &__title {
+    font-family: "SFProDisplay-Bold", sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 36px;
+    margin-bottom: 10px;
+  }
+
+  &__code {
+    font-size: 15px;
+    line-height: 18px;
+    color: #2F3035;
+    opacity: 0.6;
+    margin-bottom: 22px;
+  }
+
+  &__buttons {
+    margin-bottom: 50px;
+  }
+
+  &__tab {
+    font-size: 20px;
+    line-height: 24px;
+    color: #2F3035;
+    opacity: 0.6;
+    padding-bottom: 7px;
+    padding-right: 17px;
+    margin-bottom: 20px;
+  }
+
+  &__tab + &__tab {
+    padding-left: 17px;
+  }
+
+  &__tab.tab--active {
+    opacity: 1;
+    border-bottom: 2px solid #1C62CD;
+    font-weight: bold;
+    font-family: "SFProDisplay-Bold", sans-serif;
+  }
+}

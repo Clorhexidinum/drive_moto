@@ -105,7 +105,7 @@
     <section class="product-card">
       <div class="container">
         <div class="product-card__inner">
-          <div class="product-card__img-box">
+          <div class="product-card__img-box product-item--sale">
             <img class="product-card__img" src="images/content/gidrotsikl-large.png" alt="">
             <p class="product-card__price-old">1 200 475 ₽</p>
             <p class="product-card__price-new">1 100 475 ₽</p>
@@ -118,22 +118,45 @@
               <button class="product-card__icon-favorite">
                 <img src="images/favorite.svg" alt="">
               </button>
-              <button class="product-card__icon">
-                <img src="images/favorite.svg" alt="">
+              <button class="product-card__icon-comparison">
+                <img src="images/comparison.svg" alt="">
               </button>
               <div class="rate"></div>
             </div>
             <div class="tabs__wrapper product-card__tabs">
               <div class="tabs">
-                <a class="tabs__item tab--active product-card__tab" href="#">Характеристики</a>
-                <a class="tabs__item product-card__tab" href="#">Наличие в магазине</a>
+                <a class="tabs__item tab tab--active product-card__tab" href="#prc-tab-1">Характеристики</a>
+                <a class="tabs__item tab product-card__tab" href="#prc-tab-2">Наличие в магазине</a>
               </div>
               <div class="tabs__container">
-                <div class="tabs__content product-card__tab-content tabs__content--active">
-    
+                <div class="tabs__content product-card__tab-content tabs__content--active" id="prc-tab-1">
+                  <ul class="product-card__list">
+                    <li class="product-card__item">
+                      <div class="product-card__item-left">Производитель</div>
+                      <div class="product-card__item-right">Канада</div>
+                    </li>
+                    <li class="product-card__item">
+                      <div class="product-card__item-left">Количество мест, шт: </div>
+                      <div class="product-card__item-right">3</div>
+                    </li>
+                    <li class="product-card__item">
+                      <div class="product-card__item-left">Мощность, л.с.</div>
+                      <div class="product-card__item-right">155</div>
+                    </li>
+                    <li class="product-card__item">
+                      <div class="product-card__item-left">Тип двигателя</div>
+                      <div class="product-card__item-right">Бензиновый</div>
+                    </li>
+                    <li class="product-card__item">
+                      <div class="product-card__item-left">Год выпуска</div>
+                      <div class="product-card__item-right">2018</div>
+                    </li>
+                  </ul>
+                  <a class="product-card__more" href="#">Показать еще</a>
+                  <button class="product-card__btn">купить</button>
                 </div>
-                <div class="tabs__content product-card__tab-content">
-                  
+                <div class="tabs__content product-card__tab-content" id="prc-tab-2">
+                  content-2
                 </div>
               </div>
             </div>
