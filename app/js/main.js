@@ -34,6 +34,12 @@ $(function(){
     $(this).next().slideToggle('200');
   });
 
+  $(".rate-yo").rateYo({
+    ratedFill: "#1C62CD",
+    spacing: "7px",
+    normalFill: "#c4c4c4"
+  });
+
   $(".js-range-slider").ionRangeSlider();
 
   
@@ -54,4 +60,6 @@ $(function(){
     $('.catalog__btn-grid').removeClass('catalog__filter-button--active');
     $('.product-item__wrapper').addClass('product-item__wrapper--list');
   });
+
+  
 });

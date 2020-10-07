@@ -115,13 +115,15 @@
             <h1 class="product-card__title">Гидроцикл BRP SeaDoo GTI 155hp SE Long Blue Metallic</h1>
             <p class="product-card__code">Код товара: 366666-2</p>
             <div class="product-card__buttons">
-              <button class="product-card__icon-favorite">
+              <a href="#" class="product-card__icon-favorite">
                 <img src="images/favorite.svg" alt="">
-              </button>
-              <button class="product-card__icon-comparison">
+              </a>
+              <a href="#" class="product-card__icon-comparison">
                 <img src="images/comparison.svg" alt="">
-              </button>
-              <div class="rate"></div>
+              </a>
+              <a class="rate" href="#">
+                <div class="rate-yo" data-rateyo-rating="4"></div>
+              </a>
             </div>
             <div class="tabs__wrapper product-card__tabs">
               <div class="tabs">
@@ -153,7 +155,9 @@
                     </li>
                   </ul>
                   <a class="product-card__more" href="#">Показать еще</a>
-                  <button class="product-card__btn">купить</button>
+                  <div class="product-card__btn">
+                    <button>купить</button>
+                  </div>
                 </div>
                 <div class="tabs__content product-card__tab-content" id="prc-tab-2">
                   content-2
@@ -429,6 +433,7 @@
   
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="js/slick.min.js"></script>
+  <script src="js/jquery.rateyo.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>
