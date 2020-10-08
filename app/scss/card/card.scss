@@ -1,0 +1,47 @@
+.card {
+  &__tab-box {
+    background: #F0F0F4;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 22px 0 17px;
+    margin-bottom: 50px;
+  }
+
+  &__tab {
+    color: #2F3035;
+    opacity: 0.6;
+    font-size: 20px;
+    line-height: 24px;
+    padding-bottom: 5px;
+  }
+
+  &__tab.tab--active {
+    color: #2F3035;
+    opacity: 1;
+    border-bottom: 2px solid #1C62CD;
+  }
+
+  &__top-line {
+    margin-bottom: 10px;
+  }
+
+  &__label-search {
+    font-size: 17px;
+    line-height: 20px;
+    color: rgba(47, 48, 53, .7);
+  }
+
+  &__input-search {
+    background: #F0F0F4;
+    border-radius: 3px;
+    margin-left: 17px;
+    margin-right: 100px;
+    padding: 9px 37px 9px 17px;
+    border: none;
+  }
+
+  &__label-pickup {
+    margin-left: 54px;
+  }
+}
