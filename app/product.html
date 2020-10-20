@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
+  <link rel="stylesheet" href="css/jquery.formstyler.css">
+  <link rel="stylesheet" href="css/jquery.formstyler.theme.css">
+  <link rel="stylesheet" href="css/jquery.rateyo.min.css">
   <link rel="stylesheet" href="css/normalize.min.css">
   <link rel="stylesheet" href="css/style.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&display=swap" rel="stylesheet">
@@ -198,32 +201,32 @@
                     <input class="card__input-search" type="text">
                   </label>
                   <label class="card__label-pickup">
-                    <input type="radio filter-style" name="pickup">
+                    <input class="filter-style" type="radio" name="pickup">
                     Забрать сегодня
                   </label>
                   <label class="card__label-pickup">
-                    <input type="radio filter-style" name="pickup" checked>
+                    <input class="filter-style" type="radio" name="pickup" checked>
                     Забрать в течение недели
                   </label>
                 </div>
               </form>
               <ul class="card__list">
-                <li class="card__list-item">
-                  <div class="card__list-address card__list-title">Адрес</div>
-                  <div class="card__list-workhours card__list-title">Режим работы</div>
-                  <div class="card__list-avialable card__list-title">Доступно</div>
-                  <div class="card__list-num card__list-title">Количество</div>
-                  <div class="card__list-btn card__list-title"></div>
+                <li class="card__list-item card__list-item-title">
+                  <div class="card__list-address">Адрес</div>
+                  <div class="card__list-workhours">Режим работы</div>
+                  <div class="card__list-avialable">Доступно</div>
+                  <div class="card__list-num">Количество</div>
+                  <div class="card__list-btn"></div>
                 </li>
                 <li class="card__list-item">
                   <div class="card__list-address">Москва, ул. Науки 25</div>
                   <div class="card__list-workhours">
-                    <span>
-                      пн-сб: 08:00-19:00
-                    </span>
-                    <span>
-                      вс: 09:00-17:00
-                    </span>
+                    <div class="card__list-workhours-columns">
+                      <span>пн-сб: </span><span>08:00-19:00</span>
+                    </div>
+                    <div class="card__list-workhours-columns">
+                      <span>вс: </span><span>09:00-17:00</span>
+                    </div>
                   </div>
                   <div class="card__list-avialable">В наличии</div>
                   <div class="card__list-num">1</div>
@@ -234,12 +237,12 @@
                 <li class="card__list-item">
                   <div class="card__list-address">Москва, ул. Южная 134</div>
                   <div class="card__list-workhours">
-                    <span>
-                      пн-сб: 08:00-19:00
-                    </span>
-                    <span>
-                      вс: 09:00-17:00
-                    </span>
+                    <div class="card__list-workhours-columns">
+                      <span>пн-сб: </span><span>08:00-19:00</span>
+                    </div>
+                    <div class="card__list-workhours-columns">
+                      <span>вс: </span><span>09:00-17:00</span>
+                    </div>
                   </div>
                   <div class="card__list-avialable">В наличии</div>
                   <div class="card__list-num">2</div>
@@ -248,14 +251,14 @@
                   </div>
                 </li>
                 <li class="card__list-item">
-                  <div class="card__list-address">Санкт-Петербург, ул. Красная 19</div>
+                  <div class="card__list-address">Санкт-Петербург,<br>ул. Красная 19</div>
                   <div class="card__list-workhours">
-                    <span>
-                      пн-сб: 08:00-19:00
-                    </span>
-                    <span>
-                      вс: 09:00-17:00
-                    </span>
+                    <div class="card__list-workhours-columns">
+                      <span>пн-сб: </span><span>08:00-19:00</span>
+                    </div>
+                    <div class="card__list-workhours-columns">
+                      <span>вс: </span><span>09:00-17:00</span>
+                    </div>
                   </div>
                   <div class="card__list-avialable">Нет в наличии</div>
                   <div class="card__list-num">0</div>
@@ -266,12 +269,12 @@
                 <li class="card__list-item">
                   <div class="card__list-address">Киев, ул Шевченко 167</div>
                   <div class="card__list-workhours">
-                    <span>
-                      пн-сб: 08:00-19:00
-                    </span>
-                    <span>
-                      вс: 09:00-17:00
-                    </span>
+                    <div class="card__list-workhours-columns">
+                      <span>пн-сб: </span><span>08:00-19:00</span>
+                    </div>
+                    <div class="card__list-workhours-columns">
+                      <span>вс: </span><span>09:00-17:00</span>
+                    </div>
                   </div>
                   <div class="card__list-avialable">Нет в наличии</div>
                   <div class="card__list-num">0</div>
@@ -479,17 +482,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="js/slick.min.js"></script>
   <script src="js/jquery.rateyo.min.js"></script>
+  <script src="js/jquery.formstyler.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>
-
-<!-- <div class="tabs__wrapper">
-  <div class="tabs">
-    <a class="tabs__item tab--active" href="#"></a>
-  </div>
-  <div class="tabs__container">
-    <div class="tabs__content">
-
-    </div>
-  </div>
-</div> -->

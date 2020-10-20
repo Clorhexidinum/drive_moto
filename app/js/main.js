@@ -40,13 +40,13 @@ $(function(){
     max: 500000,
   });
 
-  $(".js-range-slider").ionRangeSlider();
-
   $(".rate-yo").rateYo({
     ratedFill: "#1C62CD",
     spacing: "7px",
     normalFill: "#c4c4c4"
   });
+
+  $(".js-range-slider").ionRangeSlider();
 
   $('.catalog__btn-grid').on('click', function() {
     $(this).addClass('catalog__filter-button--active');

@@ -1,1 +1,1 @@
-.product-slider__btn{position:absolute;top:50%;-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);transform:translateY(-50%);background-color:transparent;border:none;cursor:pointer;margin:0;padding:0;z-index:5}.product-slider__btn--prev{left:-40px}.product-slider__btn--next{right:-30px}
+.product-slider__btn{position:absolute;top:50%;transform:translateY(-50%);background-color:transparent;border:none;cursor:pointer;margin:0;padding:0;z-index:5}.product-slider__btn--prev{left:-40px}.product-slider__btn--next{right:-30px}
