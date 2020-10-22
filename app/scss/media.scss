@@ -1,0 +1,48 @@
+@media (max-width: 1100px) {
+   .menu__item +.menu__item {
+     padding: 20px;
+   }
+
+   .header {
+     &__adres {
+       margin-right: 20px;
+     }
+   }
+}
+
+@media (max-width: 968px) {
+  .header {
+    &__bottom {
+      display: none;
+    }
+  }
+
+  .menu {
+    &__btn {
+      display: block;
+    }
+
+    &__btn-line {
+      background: #2F3035;
+      border-radius: 3px;
+      height: 3px;
+      width: 34px;
+      margin: 8px 0;
+      background-color: transparent;
+      cursor: pointer;
+      border: none;
+    }
+
+    &__list {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 640px) {
+  .header {
+    &__adres {
+      display: none;
+    }
+  }
+}
