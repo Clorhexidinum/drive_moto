@@ -37,6 +37,12 @@
       display: none;
     }
   }
+
+  .menu-mobile {
+    &__line-wrapper {
+      display: block;
+    }
+  }
 }
 
 @media (max-width: 640px) {

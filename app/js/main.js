@@ -59,4 +59,10 @@ $(function(){
     $('.catalog__btn-grid').removeClass('catalog__filter-button--active');
     $('.product-item__wrapper').addClass('product-item__wrapper--list');
   });
+
+  $('.menu__btn').on('click', function() {
+    $('.menu-mobile__list').toggleClass('menu-mobile__list--active');
+  })
+
+
 });
