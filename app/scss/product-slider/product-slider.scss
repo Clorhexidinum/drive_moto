@@ -18,4 +18,16 @@
       right: -30px;
     }
   }
+  &.slick-dots {
+    bottom: -30px;
+    
+    &button {
+      background-color: #C4C4C4;
+    } 
+
+    &.slick-active button {
+      background-color: #1C62CD;
+    }
+  }
+
 }

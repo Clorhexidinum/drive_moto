@@ -6,6 +6,12 @@ $(function(){
     prevArrow: '  <button class="banner-slider__btn banner-slider__btn--prev"><img src="images/arrow-left.svg" alt="слайд влево"></button>',
     nextArrow: '  <button class="banner-slider__btn banner-slider__btn--next"><img src="images/arrow-right.svg" alt="слайд вправо"></button>',
     dotsClass: 'banner-slider__dots',
+    responsive: [{
+      breakpoint: 969,
+      settings: {
+        arrows: false,
+      },
+    }]
   });
 
   $(".tab").on('click', function(e){
@@ -27,6 +33,25 @@ $(function(){
     slidesTocroll: 1,
     prevArrow: '  <button class="product-slider__btn product-slider__btn--prev"><img src="images/arrow-black-left.svg" alt="слайд влево"></button>',
     nextArrow: '  <button class="product-slider__btn product-slider__btn--next"><img src="images/arrow-black-right.svg" alt="слайд вправо"></button>',
+    responsive: [{
+      breakpoint: 1301,
+      settings: {
+        arrows: false,
+        dots: true,
+      },
+      breakpoint: 1201,
+      settings: {
+        slidesToShow: 3,
+      },
+      breakpoint: 870,
+      settings: {
+        slidesToShow: 2,
+      },
+      breakpoint: 590,
+      settings: {
+        slidesToShow: 1,
+      },
+    }]
   });
 
   $('.aside-filter__item-title-drop, .aside-filter__extra').on('click', function(){
