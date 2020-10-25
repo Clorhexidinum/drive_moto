@@ -14,8 +14,8 @@ $(function(){
     }]
   });
 
-  $(".tab").on('click', function(e){
-    e.preventDefault();
+  $(".tab").on('click', function(evt){
+    evt.preventDefault();
 
     $($(this).siblings()).removeClass('tab--active');
     $($(this).parent().siblings().find('div')).removeClass('tabs__content--active');
@@ -33,45 +33,39 @@ $(function(){
     slidesTocroll: 1,
     prevArrow: '  <button class="product-slider__btn product-slider__btn--prev"><img src="images/arrow-black-left.svg" alt="слайд влево"></button>',
     nextArrow: '  <button class="product-slider__btn product-slider__btn--next"><img src="images/arrow-black-right.svg" alt="слайд вправо"></button>',
-    responsive: [{
-      breakpoint: 1301,
-      settings: {
-        arrows: false,
-        dots: true,
+    responsive: [
+      {
+        breakpoint: 1301,
+        settings: {
+          arrows: false,
+          dots: true,
+        }
       },
-      breakpoint: 1201,
-      settings: {
-        slidesToShow: 3,
+      {
+        breakpoint: 1201,
+        settings: {
+          slidesToShow: 3,
+        }
       },
-      breakpoint: 870,
-      settings: {
-        slidesToShow: 2,
+      {
+        breakpoint: 870,
+        settings: {
+          slidesToShow: 2,
+        }
       },
-      breakpoint: 590,
-      settings: {
-        slidesToShow: 1,
+      {
+        breakpoint: 590,
+        settings: {
+          slidesToShow: 1,
+        }
       },
-    }]
+    ]
   });
 
   $('.aside-filter__item-title-drop, .aside-filter__extra').on('click', function(){
     $(this).toggleClass('aside-filter__item-title-drop--active');
     $(this).next().slideToggle('200');
   });
-
-  $('.filter-style').styler({
-    grid: false,
-    min: 90000,
-    max: 500000,
-  });
-
-  $(".rate-yo").rateYo({
-    ratedFill: "#1C62CD",
-    spacing: "7px",
-    normalFill: "#c4c4c4"
-  });
-
-  $(".js-range-slider").ionRangeSlider();
 
   $('.catalog__btn-grid').on('click', function() {
     $(this).addClass('catalog__filter-button--active');
@@ -89,5 +83,17 @@ $(function(){
     $('.menu-mobile__list').toggleClass('menu-mobile__list--active');
   })
 
+  $('.filter-style').styler({
+    grid: false,
+    min: 90000,
+    max: 500000,
+  });
 
+  $(".rate-yo").rateYo({
+    ratedFill: "#1C62CD",
+    spacing: "7px",
+    normalFill: "#c4c4c4"
+  });
+
+  $(".js-range-slider").ionRangeSlider();
 });
