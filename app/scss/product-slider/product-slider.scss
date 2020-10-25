@@ -18,16 +18,28 @@
       right: -30px;
     }
   }
-  &.slick-dots {
+  & .slick-dots {
+    position: relative;
     bottom: -30px;
-    
-    &button {
-      background-color: #C4C4C4;
-    } 
+    display: flex;
+    justify-content: center;
 
-    &.slick-active button {
+    & li + li {
+      margin-left: 5px;
+    }
+    & button {
+      background-color: #C4C4C4;
+      border: none;
+      border-radius: 50%;
+      font-size: 0;
+      line-height: 0;
+      width: 5px;
+      height: 12px;
+      outline: none;
+    }
+
+    & .slick-active button {
       background-color: #1C62CD;
     }
   }
-
 }

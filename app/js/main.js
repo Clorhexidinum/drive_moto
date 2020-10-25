@@ -45,18 +45,21 @@ $(function(){
         breakpoint: 1201,
         settings: {
           slidesToShow: 3,
+          dots: true,
         }
       },
       {
         breakpoint: 870,
         settings: {
           slidesToShow: 2,
+          dots: true,
         }
       },
       {
         breakpoint: 590,
         settings: {
           slidesToShow: 1,
+          dots: true,
         }
       },
     ]
