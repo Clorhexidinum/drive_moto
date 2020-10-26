@@ -46,6 +46,7 @@ $(function(){
         settings: {
           slidesToShow: 3,
           dots: true,
+          arrows: false,
         }
       },
       {
@@ -53,6 +54,7 @@ $(function(){
         settings: {
           slidesToShow: 2,
           dots: true,
+          arrows: false,
         }
       },
       {
@@ -60,6 +62,7 @@ $(function(){
         settings: {
           slidesToShow: 1,
           dots: true,
+          arrows: false,
         }
       },
     ]
@@ -85,6 +88,11 @@ $(function(){
   $('.menu__btn').on('click', function() {
     $('.menu-mobile__list').toggleClass('menu-mobile__list--active');
   })
+
+  $('footer__top-tittle').('click', function() {
+    $(this).next().slideToggle();
+    $(this).toggleClass('footer__topdrop--active');
+  });
 
   $('.filter-style').styler({
     grid: false,
