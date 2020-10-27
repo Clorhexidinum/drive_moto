@@ -226,6 +226,9 @@
             <p class="product-card__price-old">1 200 475 ₽</p>
             <p class="product-card__price-new">1 100 475 ₽</p>
             <a class="product-card__link" href="#">Нашли дешевле? Снизим цену!</a>
+            <div class="product-card__btn product-card__btn-mobile">
+              <button>купить</button>
+            </div>
           </div>
           <div class="product-card__content">
             <h1 class="product-card__title">Гидроцикл BRP SeaDoo GTI 155hp SE Long Blue Metallic</h1>
@@ -288,7 +291,7 @@
     <section class="card">
       <div class="container">
         <div class="tabs__wrapper">
-          <div class="tabs card__tab-box">
+          <div class="tabs card__tab-box mobile-overflow">
             <a class="tab card__tab" href="#prod-tab-1">О товаре</a>
             <a class="tab card__tab" href="#prod-tab-2">Характеристики</a>
             <a class="tab card__tab" href="#prod-tab-3">Отзывы</a>
@@ -297,6 +300,7 @@
             <a class="tab card__tab" href="#prod-tab-6">Cервис</a>
             <a class="tab card__tab" href="#prod-tab-7">Гарантия</a>
           </div>
+        </div>
           <div class="tabs__container">
             <div class="tabs__content card__content" id="prod-tab-1">
               О товаре
@@ -407,7 +411,6 @@
               Гарантия
             </div>
           </div>
-        </div>
       </div>
     </section>
 
@@ -416,7 +419,7 @@
         <div class="products__inner">
           <h4 class="products__title">С этим товаром покупают</h4>
           <div class="tabs__wrapper">
-            <div class="products__tabs">
+            <div class="tabs products__tabs mobile-overflow-slider">
               <a class="products__tab tab tab--active" href="#pop-tab-1">запчасти</a>
               <a class="products__tab tab" href="#pop-tab-2">моторы</a>
               <a class="products__tab tab" href="#pop-tab-3">шины</a>
@@ -424,6 +427,7 @@
               <a class="products__tab tab" href="#pop-tab-5">инструменты</a>
               <a class="products__tab tab" href="#pop-tab-6">аксессуары</a>
             </div>
+          </div>
             <div class="tabs__container">
               <div class="products__content tabs__content tabs__content--active" id="pop-tab-1">
                 <div class="product-slider">
@@ -445,7 +449,7 @@
                   </div>
                   <div class="product-slider__item">
                     <div class="product-item__wrapper">
-                      <button class="product-item__favorite"></button>
+                      <button class="product-item__favorite product-item__favorite--active"></button>
                       <button class="product-item__basket">
                         <img src="images/basket-white.svg" alt="">
                       </button>
@@ -525,7 +529,7 @@
                 аксессуары
               </div>
             </div>
-          </div>
+        </div>
       </div>
     </section>
   </main>

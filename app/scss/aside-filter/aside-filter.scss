@@ -1,4 +1,8 @@
 .aside-filter {
+  &__btn {
+    display: none;
+  }
+  
   &__tabs {
     display: flex;
     justify-content: space-between;

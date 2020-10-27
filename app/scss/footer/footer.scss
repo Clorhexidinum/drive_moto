@@ -90,4 +90,8 @@
     color: #48494D;
     margin: 0 40px;
   }
+
+  &__topdrop {
+    pointer-events: none;
+  }
 }
