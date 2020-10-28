@@ -89,14 +89,14 @@ $(function(){
 
   $('.menu__btn').on('click', function() {
     $('.menu-mobile__list').toggleClass('menu-mobile__list--active');
-  })
+  });
 
-  $('.footer__top-tittle').('click', function() {
+  $('.footer__top-title').on('click', function() {
     $(this).next().slideToggle();
     $(this).toggleClass('footer__topdrop--active');
   });
 
-  $('.aside-filter__btn').('click', function() {
+  $('.aside-filter__btn').on('click', function() {
     $(this).next().slideToggle();
   });
 

@@ -135,7 +135,7 @@
   }
 
   .mobile-overflow {
-    width: 735px;
+    width: 740px;
   }
 
   .mobile-overflow-slider {
@@ -222,12 +222,21 @@
     }
   }
 
+  .product-item--sale::before {
+    top: 273px;
+  }
+
   .card {
     &__top-line label{
       display: block;
       width: 100%;
       margin-bottom: 25px;
       margin-left: 0;
+    }
+
+    &__list {
+      display: flex;
+      overflow-x: scroll;
     }
 
     &__list-item {
@@ -342,10 +351,10 @@
     }
   }
 
-  .product-card{
+  .product-card {
     &__title {
       font-size: 20px;
-      line-height: 24;
+      line-height: 24px;
       margin-left: 0;
     }
 
@@ -356,6 +365,10 @@
     &__button a + a{
       margin-left: 0;
     }
+  }
+
+  .product-item--sale::before {
+    top: 249px;
   }
 }
 
