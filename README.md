@@ -17,7 +17,7 @@ https://github.com/Clorhexidinum/drive_moto/tree/master
 * Git + Bash
 * Работа с макетом в Figma;
 * NPM: Gulp, SCSS;
-* JQery и дополнительные плагины
+* JQery и дополнительные плагины;
 
 ## Инструкция по использованию
 В проекте применяются HTML5, CSS3, JQery и Gulp.
