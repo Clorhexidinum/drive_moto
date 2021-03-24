@@ -1,0 +1,19 @@
+.menu {
+  &__btn {
+    display: none;
+    padding: 0;
+  }
+  
+  &__list {
+    display: flex;
+    align-items: center;
+  }
+
+  &__item:hover {
+    color: #1C62CD;
+  }
+
+  &__item:not(:last-child) {
+    padding-right: 50px;
+  }
+}

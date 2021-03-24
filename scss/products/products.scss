@@ -1,0 +1,42 @@
+.products {
+  margin-bottom: 80px;
+  &__title {
+    font-family: 'Barlow', sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 30px;
+    margin-bottom: 25px;
+  }
+
+  &__tabs {
+    margin-bottom: 25px;
+  }
+
+  &__tab + &__tab {
+    margin-left: 50px;
+  }
+
+  &__tab {
+    padding-bottom: 10px;
+
+    &.tab--active {
+      border-bottom: 2px solid #1C62CD;
+    }
+  }
+
+  &__more {
+    text-align: center;
+    margin: 35px 0 0;
+  }
+
+  &__more-link {
+    display: inline-block;
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #2F3035;
+    padding: 16px 43px;
+    background: #F0F0F4;
+  }
+}
