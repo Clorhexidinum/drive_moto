@@ -26,10 +26,6 @@ $(function(){
     $('.product-slider').slick('setPosition');
   });
 
-  $('.product-item__favorite').on('click', function(){
-    $(this).toggleClass('product-item__favorite--active');
-  });
-
   $('.product-slider').slick({
     slidesToShow: 4,
     slidesTocroll: 1,
@@ -70,36 +66,6 @@ $(function(){
     ]
   });
 
-  $('.aside-filter__item-title-drop, .aside-filter__extra').on('click', function(){
-    $(this).toggleClass('aside-filter__item-title-drop--active');
-    $(this).next().slideToggle('200');
-  });
-
-  $('.catalog__btn-grid').on('click', function() {
-    $(this).addClass('catalog__filter-button--active');
-    $('.catalog__btn-line').removeClass('catalog__filter-button--active');
-    $('.product-item__wrapper').removeClass('product-item__wrapper--list');
-  });
-
-  $('.catalog__btn-line').on('click', function() {
-    $(this).addClass('catalog__filter-button--active');
-    $('.catalog__btn-grid').removeClass('catalog__filter-button--active');
-    $('.product-item__wrapper').addClass('product-item__wrapper--list');
-  });
-
-  $('.menu__btn').on('click', function() {
-    $('.menu-mobile__list').toggleClass('menu-mobile__list--active');
-  });
-
-  $('.footer__top-title').on('click', function() {
-    $(this).next().slideToggle();
-    $(this).toggleClass('footer__topdrop--active');
-  });
-
-  $('.aside-filter__btn').on('click', function() {
-    $(this).next().slideToggle();
-  });
-
   $('.filter-style').styler({
     grid: false,
     min: 90000,
@@ -114,3 +80,74 @@ $(function(){
 
   $(".js-range-slider").ionRangeSlider();
 });
+
+// let a = new Product(goodsList[0]);
+// const goodsOut = document.querySelector('.catalog__inner-list');
+// let cardTemlate = document.querySelector('#product');
+
+// for(let i = 0; i < 13; i++) {
+//   a.renderCard(goodsOut, cardTemlate);
+// }
+
+// кнопка добавить в любимое (favorite)
+
+const favorite = document.querySelectorAll('.product-item__favorite');
+
+favorite.forEach((elem) => {
+  elem.addEventListener('click', () => {
+      elem.classList.toggle('product-item__favorite--active')
+  })
+})
+
+
+// переключение сетки каталога
+// const grid = document.querySelector('.catalog__btn-grid');
+// const line = document.querySelector('.catalog__btn-line');
+// const itemWrapper = document.querySelector('.product-item__wrapper');
+
+// grid.addEventListener('click', () => {
+//   grid.classList.add('catalog__filter-button--active');
+//   line.classList.remove('catalog__filter-button--active');
+//   itemWrapper.classList.remove('product-item__wrapper--list')
+// })
+
+// line.addEventListener('click', () => {
+//   line.classList.add('catalog__filter-button--active');
+//   grid.classList.remove('catalog__filter-button--active');
+//   itemWrapper.classList.add('product-item__wrapper--list')
+// })
+
+// Мобильное меню
+const menuBtn = document.querySelector('.menu__btn');
+
+menuBtn.addEventListener('click', () => {
+  const itemWrapper = document.querySelector('.menu-mobile__list');
+  itemWrapper.classList.toggle('menu-mobile__list--active');
+})
+
+// Меню в футере
+const footerTitle = document.querySelectorAll('.footer__top-title');
+
+footerTitle.forEach((elem) => {
+  elem.addEventListener('click', () => {
+      elem.classList.toggle('footer__topdrop--active');
+  })
+})
+
+// Топдроп в фильтре мобильная весия
+// const filterBtn = document.querySelector('.aside-filter__btn');
+
+// filterBtn.addEventListener('click', () => {
+//   const asideBtn = document.querySelector('.aside-filter');
+  
+//   asideBtn.classList.toggle('aside-filter__active');
+// })
+
+// Топдроп в фильтре
+// const asideFilterBtn = document.querySelectorAll('.aside-filter__item-title-drop');
+
+// asideFilterBtn.forEach((elem) => {
+//   elem.addEventListener('click', () => {
+//       elem.classList.toggle('aside-filter__item-title-drop--activ');
+//   })
+// })

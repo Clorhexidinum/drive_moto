@@ -4,7 +4,8 @@
   "description": "start gulp",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "npm run build & gh-pages -d build"
   },
   "author": "Murat Kubekov",
   "license": "ISC",
@@ -21,6 +22,7 @@
     "gulp-sourcemaps": "^2.6.5"
   },
   "dependencies": {
+    "gh-pages": "^3.1.0",
     "gulp-webp": "^4.0.1",
     "ion-rangeslider": "^2.3.1",
     "jquery-form-styler": "^2.0.2",

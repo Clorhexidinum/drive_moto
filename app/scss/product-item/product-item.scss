@@ -71,6 +71,7 @@
     border: none;
     outline: none;
     z-index: 50;
+    cursor: pointer;
   }
 
   &__favorite::before {
@@ -108,6 +109,17 @@
     line-height: 36px;
   }
 
+  &__price-old {
+    font-size: 20px;
+    line-height: 35px;
+    opacity: 0.6;
+    display: inline-block;
+    background-image: url('../images/old-line.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
   &__hover-text {
     padding: 18px 21px;
     background-color: rgba(255, 255, 255, .9);
@@ -131,8 +143,6 @@
     background-color: #1C62CD;
     color: #ffffff;
     position: absolute;
-    left: 0;
-    top: 0;
     text-transform: uppercase;
     font-size: 12px;
     line-height: 14px;
@@ -145,6 +155,7 @@
     border-radius: 3px;
     color: #1C62CD;
     z-index: 10;
+    border: 1px;
   
     & .product-item__hover-text {
       opacity: 1;
@@ -152,6 +163,10 @@
     }
 
     .product-item__notify-text {
+      color: #2F3035;
+    }
+
+    & .product-item__price-old {
       color: #2F3035;
     }
   }

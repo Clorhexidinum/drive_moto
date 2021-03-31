@@ -1,5 +1,5 @@
 @import "vars.scss";
-@import "libs";
+@import "_libs";
 @import "_fonts";
 
 @import "global.scss";
@@ -23,7 +23,6 @@
 @import "catalog/catalog.scss";
 @import "pagination/pagination.scss";
 @import "aside-filter/aside-filter.scss";
-@import "input-style/input-style.scss";
 @import "product-card/product-card.scss";
 @import "card/card.scss";
 @import "menu-mobile/menu-mobile.scss";
