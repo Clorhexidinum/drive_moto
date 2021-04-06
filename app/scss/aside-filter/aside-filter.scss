@@ -61,12 +61,18 @@
   &__item-title-drop--active::before {
     transform: rotate(180deg);
   }
-
+  
   &__content {
-    display: flex;
+    display: none;
     flex-wrap: wrap;
     margin-top: 10px;
   }
+
+  &__item-title-drop--active + .aside-filter__content {
+    display: flex;
+  }
+
+  
 
   &__content-label > span::before {
     content: '';
@@ -266,6 +272,11 @@
     flex-wrap: nowrap;
     padding: 0 5px 0 0;
     justify-content: space-between;
+  }
+
+  &__select {
+    border: none;
+    outline: none;
   }
 }
 

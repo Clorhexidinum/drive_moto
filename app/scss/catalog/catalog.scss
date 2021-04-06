@@ -68,21 +68,29 @@
 
   &__inner {
     display: flex;
-    max-width: 290px;
   }
 
   &__inner-asside {
     min-width: 290px;
+    max-width: 290px;
     margin-right: 10px;
   }
 
-  &__inner-list {
+  &__product-list {
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
+    min-height: 1400px;
   }
 
   &__inner-list .product-item__wrapper {
     margin-bottom: 30px;
+  }
+
+  &__select-item {
+    border: 2px solid #F0F0F4;
+    outline: none;
+    margin-right: 5px;
+    padding: 3px;
+    font-size: 13px;
   }
 }

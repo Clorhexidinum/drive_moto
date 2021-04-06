@@ -26,7 +26,7 @@ class Product {
       price.textContent = `${this.finalPrice().toLocaleString()} ₽`;
       img.setAttribute('src', `./images/content/${this.image}`);
 
-      if (this.availability < 1) {
+      if (this.availability === 0) {
         item.classList.add('product-item__not-available');
       }
 
@@ -34,7 +34,7 @@ class Product {
         btn.classList.add('product-item--sale');
         priceOld.textContent = this.price;
       } else {
-        priceOld.remove();
+        priceOld.classList.remove('product-item--sale');
       }
    
       parrent.append(template.content.cloneNode(true));

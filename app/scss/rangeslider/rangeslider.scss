@@ -1,0 +1,39 @@
+.range {
+  width: 290px;
+  height: 3px;
+  border-radius: 1px;
+  background-color: #F0F0F4;
+  position: relative;
+  margin-top: 40px;
+
+  &__button {
+    position: absolute;
+    top: 50%;
+    width: 15px;
+    height: 15px;
+    cursor: move;
+    transform: translateY(-50%);
+    border: none;
+    border-radius: 50%;
+    background-color: #F0F0F4;
+  }
+
+  &__between {
+    position: absolute;
+    height: 3px;
+    border: none;
+    background-color: #1C62CD;
+  }
+
+  &__inpt {
+    height: min-content;
+    position: absolute;
+    top: -40px;
+    font-size: 17px;
+    width: 85px;
+
+    &--right {
+      right: 0;
+    }
+  }
+}
