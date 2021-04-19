@@ -1,4 +1,3 @@
-
 setTimeout(init2slider('id66', 'id66b', 'id661', 'id662', 'id66i1', 'id66i2'), 0);
 
 function init2slider(idX, btwX, btn1X, btn2X, input1, input2) {
@@ -57,183 +56,114 @@ function init2slider(idX, btwX, btn1X, btn2X, input1, input2) {
   init(inpt2, inpt1);
 
   /*mouse*/
-  // function moveBtn (button) {
-  //   button.addEventListener('mousedown', function(evt) {
-  //     const sliderCoords = getCoords(slider);
-  //     const buttonCoords1 = getCoords(button1);
-  //     const buttonCoords2 = getCoords(button2);
-  //     let shiftX2 = evt.pageX - buttonCoords2.left;
-  //     let shiftX1 = evt.pageX - buttonCoords1.left;
+button1.onmousedown = function (evt) {
+  const sliderCoords = getCoords(slider);
+  const buttonCoords1 = getCoords(button1);
+  const buttonCoords2 = getCoords(button2);
+  let shiftX2 = evt.pageX - buttonCoords2.left;
+  let shiftX1 = evt.pageX - buttonCoords1.left;
 
-  //     let left1 = evt.pageX - shiftX1 - sliderCoords.left;
-  //     let right1 = slider.offsetWidth - button1.offsetWidth;
-  //     let left2 = evt.pageX - shiftX2 - sliderCoords.left;
-  //     let right2 = slider.offsetWidth - button2.offsetWidth;
-
-  //       function hhh (evt, shift, btn1, btn2, l1, l2, r1, r2) {
-  //         console.log(evt);
-  //         if (l1 < 0) l1 = 0;
-  //         if (l1 > r1) l1 = r1;
-  //         btn1.style.marginLeft = l1 + 'px';
-    
-    
-  //         shift = evt.pageX - btn2.left;
-          
-  //         if (l2 < 0) l2 = 0;
-  //         if (l2 > r2) l2 = r2;
-  //       }
-
-  //     document.onmousemove = function (evt) {
-  //     if(button === evt.target.classList.contains('range__inpt--left')) {
-  //       hhh(evt, shiftX2 ,button1, button2, left1, left2, right1, right2);
-  //     } else {
-  //       hhh(evt, shiftX1, button1, button2, left2, left1, right2, right1);
-  //     }
-        
-  //       let per_min = 0;
-  //       let per_max = 0;
-  
-  //       if (left1 > left2) {
-  //         between.style.width = (left1 - left2) + 'px';
-  //         between.style.marginLeft = left2 + 'px';
-  
-  //         per_min = left2 * 100 / (slider.offsetWidth - button1.offsetWidth);
-  //         per_max = left1 * 100 / (slider.offsetWidth - button1.offsetWidth);
-  //       } else {
-  //         between.style.width = (left2 - left1) + 'px';
-  //         between.style.marginLeft = left1 + 'px';
-  
-  //         per_min = left1 * 100 / (slider.offsetWidth - button1.offsetWidth);
-  //         per_max = left2 * 100 / (slider.offsetWidth - button1.offsetWidth);
-  //       }
-  //       inpt1.value = (parseInt(min) + Math.round((max - min) * per_min / 100));
-  //       inpt2.value = (parseInt(min) + Math.round((max - min) * per_max / 100));
-  //     };
-
-  //     if (button === button1) {
-  //       hhh
-  //     }
-  
-  //     document.onmouseup = function () {
-  //       document.onmousemove = document.onmouseup = null;
-  //     };
-      
-  //     return false;
-  //   })
-    
-  // };
-
-  // moveBtn(button1);
-  // moveBtn(button2);
-
-  // button1.onmousedown = function (evt) {
-  //   const sliderCoords = getCoords(slider);
-  //   const buttonCoords1 = getCoords(button1);
-  //   const buttonCoords2 = getCoords(button2);
-  //   let shiftX2 = evt.pageX - buttonCoords2.left;
-  //   let shiftX1 = evt.pageX - buttonCoords1.left;
-
-  //   document.onmousemove = function (evt) {
-  //     let left1 = evt.pageX - shiftX1 - sliderCoords.left;
-  //     let right1 = slider.offsetWidth - button1.offsetWidth;
-  //     if (left1 < 0) left1 = 0;
-  //     if (left1 > right1) left1 = right1;
-  //     button1.style.marginLeft = left1 + 'px';
+  document.onmousemove = function (evt) {
+    let left1 = evt.pageX - shiftX1 - sliderCoords.left;
+    let right1 = slider.offsetWidth - button1.offsetWidth;
+    if (left1 < 0) left1 = 0;
+    if (left1 > right1) left1 = right1;
+    button1.style.marginLeft = left1 + 'px';
 
 
-  //     shiftX2 = evt.pageX - buttonCoords2.left;
-  //     let left2 = evt.pageX - shiftX2 - sliderCoords.left;
-  //     let right2 = slider.offsetWidth - button2.offsetWidth;
-  //     if (left2 < 0) left2 = 0;
-  //     if (left2 > right2) left2 = right2;
+    shiftX2 = evt.pageX - buttonCoords2.left;
+    let left2 = evt.pageX - shiftX2 - sliderCoords.left;
+    let right2 = slider.offsetWidth - button2.offsetWidth;
+    if (left2 < 0) left2 = 0;
+    if (left2 > right2) left2 = right2;
 
-  //     let per_min = 0;
-  //     let per_max = 0;
+    let per_min = 0;
+    let per_max = 0;
 
-  //     if (left1 > left2) {
-  //       between.style.width = (left1 - left2) + 'px';
-  //       between.style.marginLeft = left2 + 'px';
+    if (left1 > left2) {
+      between.style.width = (left1 - left2) + 'px';
+      between.style.marginLeft = left2 + 'px';
 
-  //       per_min = left2 * 100 / (slider.offsetWidth - button1.offsetWidth);
-  //       per_max = left1 * 100 / (slider.offsetWidth - button1.offsetWidth);
-  //     } else {
-  //       between.style.width = (left2 - left1) + 'px';
-  //       between.style.marginLeft = left1 + 'px';
+      per_min = left2 * 100 / (slider.offsetWidth - button1.offsetWidth);
+      per_max = left1 * 100 / (slider.offsetWidth - button1.offsetWidth);
+    } else {
+      between.style.width = (left2 - left1) + 'px';
+      between.style.marginLeft = left1 + 'px';
 
-  //       per_min = left1 * 100 / (slider.offsetWidth - button1.offsetWidth);
-  //       per_max = left2 * 100 / (slider.offsetWidth - button1.offsetWidth);
-  //     }
-  //     inpt1.value = (parseInt(min) + Math.round((max - min) * per_min / 100));
-  //     inpt2.value = (parseInt(min) + Math.round((max - min) * per_max / 100));
-  //   };
+      per_min = left1 * 100 / (slider.offsetWidth - button1.offsetWidth);
+      per_max = left2 * 100 / (slider.offsetWidth - button1.offsetWidth);
+    }
+    inpt1.value = (parseInt(min) + Math.round((max - min) * per_min / 100));
+    inpt2.value = (parseInt(min) + Math.round((max - min) * per_max / 100));
+  };
 
-  //   document.onmouseup = function () {
-  //     document.onmousemove = document.onmouseup = null;
-  //   };
+  document.onmouseup = function () {
+    document.onmousemove = document.onmouseup = null;
+  };
 
-  //   return false;
-  // };
+  return false;
+};
 
-  // button2.onmousedown = function (evt) {
-  //   const sliderCoords = getCoords(slider);
-  //   const buttonCoords1 = getCoords(button1);
-  //   const buttonCoords2 = getCoords(button2);
-  //   let shiftX2 = evt.pageX - buttonCoords2.left;
-  //   let shiftX1 = evt.pageX - buttonCoords1.left;
+button2.onmousedown = function (evt) {
+  const sliderCoords = getCoords(slider);
+  const buttonCoords1 = getCoords(button1);
+  const buttonCoords2 = getCoords(button2);
+  let shiftX2 = evt.pageX - buttonCoords2.left;
+  let shiftX1 = evt.pageX - buttonCoords1.left;
 
-  //   document.onmousemove = function (evt) {
-  //     let left2 = evt.pageX - shiftX2 - sliderCoords.left;
-  //     let right2 = slider.offsetWidth - button2.offsetWidth;
-  //     if (left2 < 0) left2 = 0;
-  //     if (left2 > right2) left2 = right2;
-  //     button2.style.marginLeft = left2 + 'px';
+  document.onmousemove = function (evt) {
+    let left2 = evt.pageX - shiftX2 - sliderCoords.left;
+    let right2 = slider.offsetWidth - button2.offsetWidth;
+    if (left2 < 0) left2 = 0;
+    if (left2 > right2) left2 = right2;
+    button2.style.marginLeft = left2 + 'px';
 
 
-  //     shiftX1 = evt.pageX - buttonCoords1.left;
-  //     let left1 = evt.pageX - shiftX1 - sliderCoords.left;
-  //     let right1 = slider.offsetWidth - button1.offsetWidth;
-  //     if (left1 < 0) left1 = 0;
-  //     if (left1 > right1) left1 = right1;
+    shiftX1 = evt.pageX - buttonCoords1.left;
+    let left1 = evt.pageX - shiftX1 - sliderCoords.left;
+    let right1 = slider.offsetWidth - button1.offsetWidth;
+    if (left1 < 0) left1 = 0;
+    if (left1 > right1) left1 = right1;
 
-  //     let per_min = 0;
-  //     let per_max = 0;
+    let per_min = 0;
+    let per_max = 0;
 
-  //     if (left1 > left2) {
-  //       between.style.width = (left1 - left2) + 'px';
-  //       between.style.marginLeft = left2 + 'px';
-  //       per_min = left2 * 100 / (slider.offsetWidth - button1.offsetWidth);
-  //       per_max = left1 * 100 / (slider.offsetWidth - button1.offsetWidth);
-  //     } else {
-  //       between.style.width = (left2 - left1) + 'px';
-  //       between.style.marginLeft = left1 + 'px';
-  //       per_min = left1 * 100 / (slider.offsetWidth - button1.offsetWidth);
-  //       per_max = left2 * 100 / (slider.offsetWidth - button1.offsetWidth);
-  //     }
-  //     inpt1.value = (parseInt(min) + Math.round((max - min) * per_min / 100));
-  //     inpt2.value = (parseInt(min) + Math.round((max - min) * per_max / 100));
+    if (left1 > left2) {
+      between.style.width = (left1 - left2) + 'px';
+      between.style.marginLeft = left2 + 'px';
+      per_min = left2 * 100 / (slider.offsetWidth - button1.offsetWidth);
+      per_max = left1 * 100 / (slider.offsetWidth - button1.offsetWidth);
+    } else {
+      between.style.width = (left2 - left1) + 'px';
+      between.style.marginLeft = left1 + 'px';
+      per_min = left1 * 100 / (slider.offsetWidth - button1.offsetWidth);
+      per_max = left2 * 100 / (slider.offsetWidth - button1.offsetWidth);
+    }
+    inpt1.value = (parseInt(min) + Math.round((max - min) * per_min / 100));
+    inpt2.value = (parseInt(min) + Math.round((max - min) * per_max / 100));
 
-  //   };
+  };
 
-  //   document.onmouseup = function () {
-  //     document.onmousemove = document.onmouseup = null;
-  //   };
-  //   return false;
-  // };
+  document.onmouseup = function () {
+    document.onmousemove = document.onmouseup = null;
+  };
+  return false;
+};
 
-  button1.addEventListener('dragstart', () => {
-    return false;
-  });
+button1.addEventListener('dragstart', () => {
+  return false;
+});
 
-  button2.addEventListener('dragstart', () => {
-    return false;
-  });
+button2.addEventListener('dragstart', () => {
+  return false;
+});
 
-  function getCoords(elem) {
-    const box = elem.getBoundingClientRect();
-    return {
-      top: box.top + pageYOffset,
-      left: box.left + pageXOffset
-    };
-  }
+function getCoords(elem) {
+  const box = elem.getBoundingClientRect();
+  return {
+    top: box.top + pageYOffset,
+    left: box.left + pageXOffset
+  };
+}
 
 }
