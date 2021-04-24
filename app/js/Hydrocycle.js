@@ -1,6 +1,6 @@
 class Hydrocycle extends Product {
   constructor(arr) {
-    super (arr);
+    super(arr);
     this.power = arr.power;
     this.motor = arr.motor;
     this.release = arr.release;

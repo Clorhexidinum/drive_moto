@@ -1,7 +1,7 @@
 .product-card {
   margin-bottom: 80px;
 
-  &__inner{
+  &__inner {
     display: flex;
     justify-content: space-between;
     position: relative;
@@ -11,7 +11,7 @@
     width: 500px;
     padding-top: 64px;
     text-align: center;
-    font-family: 'Barlow', sans-serif;
+    font-family: "Barlow", sans-serif;
     display: flex;
     flex-direction: column;
   }
@@ -34,7 +34,7 @@
     line-height: 44px;
     opacity: 0.6;
     display: inline-block;
-    background-image: url('../images/old-line.svg');
+    background-image: url("../images/old-line.svg");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -50,7 +50,7 @@
   &__link {
     font-size: 15px;
     line-height: 18px;
-    color: #1C62CD;
+    color: #1c62cd;
   }
 
   &__content {
@@ -68,7 +68,7 @@
   &__code {
     font-size: 15px;
     line-height: 18px;
-    color: #2F3035;
+    color: #2f3035;
     opacity: 0.6;
     margin-bottom: 22px;
   }
@@ -77,14 +77,14 @@
     margin-bottom: 50px;
   }
 
-  &__buttons a + a{
+  &__buttons a + a {
     margin-left: 30px;
   }
 
   &__tab {
     font-size: 20px;
     line-height: 24px;
-    color: #2F3035;
+    color: #2f3035;
     opacity: 0.6;
     padding-bottom: 7px;
     padding-right: 17px;
@@ -97,7 +97,7 @@
 
   &__tab.tab--active {
     opacity: 1;
-    border-bottom: 2px solid #1C62CD;
+    border-bottom: 2px solid #1c62cd;
     font-weight: bold;
     font-family: "SFProDisplay-Bold", sans-serif;
   }
@@ -109,7 +109,7 @@
 
   &__item {
     padding: 15px 0 6px;
-    border-bottom: 1px solid rgba(47, 48 ,51 ,.1);
+    border-bottom: 1px solid rgba(47, 48, 51, 0.1);
     display: flex;
     justify-content: space-between;
   }
@@ -125,19 +125,19 @@
   &__more {
     font-size: 14px;
     line-height: 17px;
-    color: #1C62CD;
-    border-bottom: 1px solid #1C62CD;
+    color: #1c62cd;
+    border-bottom: 1px solid #1c62cd;
     margin-bottom: 40px;
   }
 
-  &__btn button{
+  &__btn button {
     font-size: 14px;
     line-height: 17px;
     letter-spacing: 0.12em;
     text-transform: uppercase;
-    color: #FFFFFF;
+    color: #ffffff;
     padding: 16px 56px;
-    background: #1C62CD;
+    background: #1c62cd;
     border-radius: 3px;
     border: none;
     cursor: pointer;
