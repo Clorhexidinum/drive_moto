@@ -45,8 +45,8 @@
 
   &__label-pickup {
     margin-left: 54px;
-    font-size: 17px;
-    line-height: 20px;
+    font-size: $fs-small;
+    line-height: $lh-smaller;
     color: rgba(47, 48, 53, .7);
   }
 
@@ -96,7 +96,7 @@
 
   &__list-btn button{
     font-size: $fs-smaller;
-    line-height: 16px;
+    line-height: $lh-extra-small;
     letter-spacing: 0.12em;
     color: $base;
     background-color: $active;

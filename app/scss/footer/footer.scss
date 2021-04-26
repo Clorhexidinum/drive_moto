@@ -51,8 +51,8 @@
     border: none;
     background: $active;
     color: $base;
-    font-size: 11px;
-    line-height: 13px;
+    font-size: $fs-extra-small;
+    line-height: $lh-extra-smaller;
     letter-spacing: 0.12em;
     cursor: pointer;
   }
