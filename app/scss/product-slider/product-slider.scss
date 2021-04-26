@@ -3,7 +3,7 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background-color: transparent;
+    background-color: $transparent;
     border: none;
     cursor: pointer;
     margin: 0;
@@ -28,7 +28,7 @@
       margin-left: 5px;
     }
     & button {
-      background-color: #C4C4C4;
+      background-color: $additional;
       border: none;
       border-radius: 50%;
       font-size: 0;
@@ -39,7 +39,7 @@
     }
 
     & .slick-active button {
-      background-color: #1C62CD;
+      background-color: $active;
     }
   }
 }

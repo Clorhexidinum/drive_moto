@@ -2,7 +2,7 @@
   width: 290px;
   height: 3px;
   border-radius: 1px;
-  background-color: #F0F0F4;
+  background-color: $base;
   position: relative;
   margin-top: 40px;
 
@@ -15,21 +15,21 @@
     transform: translateY(-50%);
     border: none;
     border-radius: 50%;
-    background-color: #F0F0F4;
+    background-color: $base;
   }
 
   &__between {
     position: absolute;
     height: 3px;
     border: none;
-    background-color: #1C62CD;
+    background-color: $active;
   }
 
   &__inpt {
     height: min-content;
     position: absolute;
     top: -40px;
-    font-size: 17px;
+    font-size: $fs-medium;
     width: 85px;
 
     &--right {

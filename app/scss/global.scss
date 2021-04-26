@@ -3,7 +3,8 @@ html {
   scroll-behavior: smooth;
 }
 
-*,*::before,
+*,
+*::before,
 *::after {
   box-sizing: inherit;
 }
@@ -36,12 +37,11 @@ p {
 }
 
 body {
-  background-color: #fff;
-  color: #2F3035;
-  font-family: "SFProDisplay-Regular", sans-serif;
-  font-size: 20px;
-  line-height: 24px;
-  font-weight: 400;
+  background-color: $base;
+  color: $main-text;
+  @extend %sf-regular;
+  font-size: $fs-bigger;
+  line-height: $lh-medium;
   overflow-x: hidden;
   min-width: 320px;
 }

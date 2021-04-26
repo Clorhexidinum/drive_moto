@@ -2,7 +2,7 @@
   margin-bottom: 100px;
 
   &__tab-box {
-    background: #F0F0F4;
+    background: $base;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -11,17 +11,17 @@
   }
 
   &__tab {
-    color: #2F3035;
+    color: $main-text;
     opacity: 0.6;
-    font-size: 20px;
-    line-height: 24px;
+    font-size: $fs-bigger;
+    line-height: $lh-medium;
     padding-bottom: 5px;
   }
 
   &__tab.tab--active {
-    color: #2F3035;
+    color: $main-text;
     opacity: 1;
-    border-bottom: 2px solid #1C62CD;
+    border-bottom: 2px solid $active;
   }
 
   &__top-line {
@@ -29,13 +29,13 @@
   }
 
   &__label-search {
-    font-size: 17px;
-    line-height: 20px;
+    font-size: $fs-medium:;
+    line-height: $lh-smaller;
     color: rgba(47, 48, 53, .7);
   }
 
   &__input-search {
-    background: #F0F0F4;
+    background: $base;
     border-radius: 3px;
     margin-left: 17px;
     margin-right: 100px;
@@ -55,14 +55,14 @@
     border-bottom: 1px solid rgba(47,48,51,0.1);
     display: flex;
     align-items: baseline;
-    font-size: 16px;
-    line-height: 19px;
+    font-size: $fs-small;
+    line-height: $lh-small;
     color: rgba(47, 48, 53, .7);
   }
 
   &__list-item-title {
-    font-size: 20px;
-    line-height: 24px;
+    font-size: $fs-bigger;
+    line-height: $lh-medium;
     color: rgba(47, 48, 53, 1);
   }
 
@@ -95,11 +95,11 @@
   }
 
   &__list-btn button{
-    font-size: 13px;
+    font-size: $fs-smaller;
     line-height: 16px;
     letter-spacing: 0.12em;
-    color: #FFFFFF;
-    background-color: #1C62CD;
+    color: $base;
+    background-color: $active;
     border-radius: 3px;
     padding: 9px 40px;
     border: none;

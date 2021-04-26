@@ -130,11 +130,10 @@ tabsBtn.forEach((elem) => {
   });
 });
 
-fetch("db.json")
-  .then((data) => data.json())
-  .then((res) => console.log(res));
+// fetch("db.json")
+//   .then((data) => data.json())
+//   .then((res) => console.log(res));
 
-
-let cart = {
-  ''
-}
+// let cart = {
+//   ''
+// }

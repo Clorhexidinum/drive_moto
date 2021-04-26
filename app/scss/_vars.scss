@@ -1,20 +1,20 @@
 %ubuntu-light {
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
   font-weight: 300;
 }
 
 %ubuntu-regular {
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
   font-weight: 400;
 }
 
 %ubuntu-medium {
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
   font-weight: 500;
 }
 
 %ubuntu-bold {
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
   font-weight: 700;
 }
 
@@ -23,17 +23,45 @@
   font-weight: 400;
 }
 
+%sf-medium {
+  font-family: "SFProDisplay-Semibold", sans-serif;
+  font-weight: 500;
+}
+
 %sf-semibold {
   font-family: "SFProDisplay-Semibold", sans-serif;
   font-weight: 600;
 }
 
+%sf-bold {
+  font-family: "SFProDisplay-Semibold", sans-serif;
+  font-weight: 700;
+}
+
+%sf-bold {
+  font-family: "SFProDisplay-Semibold", sans-serif;
+  font-weight: 700;
+}
+
+%barlow-regular {
+  font-family: "Barlow", sans-serif;
+  font-weight: 400;
+}
+
+%barlow-bold {
+  font-family: "Barlow", sans-serif;
+  font-weight: 700;
+}
+
 /*  Colors  */
 
-$main-text: #2F3035;
-$active: #1C62CD;
-$base: #F0F0F4;
-$additional: #C4C4C4;
+$main-text: #2f3035;
+$active: #1c62cd;
+$base: #f0f0f4;
+$additional: #c4c4c4;
+$additional_light: #e4e4e4;
+$placeholder: #bdbec2;
+$transparent: transparent;
 
 /*  Font-weight  */
 
@@ -45,17 +73,16 @@ $bold: 700;
 
 /*  Font-size  */
 
-$fs-small: 14px;
-$fs-small: 15px;
+$fs-smaller: 14px;
+$fs-small: 16px;
 $fs-medium: 18px;
 $fs-bigger: 20px;
 $fs-big: 24px;
 $fs-extra-big: 30px;
 
-
 /*  Line-height  */
 
-$lh-extra-small: 18px;
+$lh-extra-small: 17px;
 $lh-small: 19px;
 $lh-smaller: 21px;
 $lh-medium: 24px;

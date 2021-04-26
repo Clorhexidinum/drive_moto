@@ -11,17 +11,17 @@
     padding: 6px 12px;
     border: 2px solid transparent;
     margin: 0 4px;
-    font-size: 18px;
-    line-height: 22px;
-    color: #C4C4C4;
+    font-size: $fs-medium;
+    line-height: $lh-smaller;
+    color: $additional;
   }
 
-  &__item.pagination__item--active{
-    border: 2px solid #1C62CD;
-    color: #1C62CD;
+  &__item.pagination__item--active {
+    border: 2px solid $active;
+    color: $active;
   }
 
-  &__item a{
+  &__item a {
     display: block;
   }
 }

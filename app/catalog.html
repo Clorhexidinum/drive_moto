@@ -260,13 +260,13 @@
                         <div class="aside-filter__content">
                           <div class="aside-filter__content-box">
                             <label class="aside-filter__content-label">
-                              <input class="filter__checkbox visually-hidden" type="checkbox">
+                              <input class="filter__checkbox visually-hidden" name="availability" type="checkbox">
                               <span>В наличии
                             </label></span>
                           </div>
                           <div class="aside-filter__content-box">
                             <label class="aside-filter__content-label">
-                              <input class="filter__checkbox visually-hidden" type="checkbox">
+                              <input class="filter__checkbox visually-hidden" name="availability" type="checkbox">
                               <span>Под заказ</span>
                             </label>
                           </div>
@@ -301,8 +301,8 @@
                         <p class="aside-filter__item-title aside-filter__item-title-drop aside-filter__item-title-drop--active">Цена</p>
                         <div class="aside-filter__content">
                           <div id='id66' class="range">
-                            <input id='id66i1' class='range__inpt range__inpt--left' type='number' min='0' max='500000' value="100000">
-                            <input id='id66i2' class='range__inpt range__inpt--right' type='number' min='0' max='500000' value="400000">
+                            <input id='id66i1' class='range__inpt range__inpt--left' name="price" type='number' min='0' max='500000' value="100000">
+                            <input id='id66i2' class='range__inpt range__inpt--right' name="price" type='number' min='0' max='500000' value="400000">
                             <div id='id66b' class='range__between'></div>
                             <a id='id661' class="range__button"></a>
                             <a id='id662' class="range__button"></a>
@@ -314,7 +314,7 @@
                       <li class="aside-filter__item-list">
                         <div class="aside-filter__item-box">
                           <p class="aside-filter__item-list-title">Мощность, л.с.</p>
-                          <select class="aside-filter__select">
+                          <select class="aside-filter__select" name="power">
                             <option value="90">90</option>
                             <option value="130">130</option>
                             <option value="154">154</option>
@@ -324,7 +324,7 @@
                         </div>
                         <div class="aside-filter__item-box">
                           <p class="aside-filter__item-list-title">Мощность двигателя, л.с.</p>
-                          <select class="aside-filter__select">
+                          <select class="aside-filter__select" name="engine_power">
                             <option value="90">90</option>
                             <option value="130">130</option>
                             <option value="154">154</option>
@@ -334,7 +334,7 @@
                         </div>
                         <div class="aside-filter__item-box">
                           <p class="aside-filter__item-list-title">Макс. скорость</p>
-                          <select class="aside-filter__select">
+                          <select class="aside-filter__select" name="max_speed">
                             <option value="90">90</option>
                             <option value="130">130</option>
                             <option value="154">154</option>
@@ -349,19 +349,19 @@
                         <div class="aside-filter__content">
                           <div class="aside-filter__content-box">
                             <label class="aside-filter__content-label">
-                              <input class="filter__checkbox visually-hidden" type="checkbox" checked>
+                              <input class="filter__checkbox visually-hidden" name="brand" type="checkbox" checked>
                               <span>BRP</span>
                             </label>
                           </div>
                           <div class="aside-filter__content-box">
                             <label class="aside-filter__content-label">
-                              <input class="filter__checkbox visually-hidden" type="checkbox" checked>
+                              <input class="filter__checkbox visually-hidden" name="brand" type="checkbox" checked>
                               <span>Spark 2</span>
                             </label>
                           </div>
                           <div class="aside-filter__content-box">
                             <label class="aside-filter__content-label">
-                              <input class="filter__checkbox visually-hidden" type="checkbox">
+                              <input class="filter__checkbox visually-hidden" name="brand" type="checkbox">
                               <span>Spark 3 </span>
                             </label>
                           </div>
@@ -377,25 +377,25 @@
                           <input class="aside-filter__search" type="text" placeholder="Введите модель">
                           <div class="aside-filter__content-box">
                             <label class="aside-filter__content-label">
-                              <input class="filter__checkbox visually-hidden" type="checkbox" checked>
+                              <input class="filter__checkbox visually-hidden" name="model" type="checkbox" checked>
                               <span>Sea-doo Spark 2</span>
                             </label>
                           </div>
                           <div class="aside-filter__content-box">
                             <label class="aside-filter__content-label">
-                              <input class="filter__checkbox visually-hidden" type="checkbox" checked>
+                              <input class="filter__checkbox visually-hidden" name="model" type="checkbox" checked>
                               <span>SeaDoo Spark 90</span>
                             </label>
                           </div>
                           <div class="aside-filter__content-box">
                             <label class="aside-filter__content-label">
-                              <input class="filter__checkbox visually-hidden" type="checkbox">
+                              <input class="filter__checkbox visually-hidden" name="model" type="checkbox">
                               <span>SeaDoo GTI 155</span>
                             </label>
                           </div>
                           <div class="aside-filter__content-box">
                             <label class="aside-filter__content-label">
-                              <input class="filter__checkbox visually-hidden" type="checkbox">
+                              <input class="filter__checkbox visually-hidden" name="model" type="checkbox">
                               <span>SeaDoo GTR 230</span>
                             </label>
                           </div>
@@ -410,25 +410,25 @@
                         <div class="aside-filter__content action">
                           <div class="aside-filter__content-box">
                             <label class="aside-filter__content-label">
-                              <input class="filter__checkbox-txt visually-hidden" type="checkbox" checked>
+                              <input class="filter__checkbox-txt visually-hidden" name="promo" type="checkbox" checked>
                               <span class="btn-checked__txt">SALE</span>
                             </label>
                           </div>
                           <div class="aside-filter__content-box">
                             <label class="aside-filter__content-label">
-                              <input class="filter__checkbox-txt visually-hidden" type="checkbox" checked>
+                              <input class="filter__checkbox-txt visually-hidden" name="promo" type="checkbox" checked>
                               <span class="btn-checked__txt">NEW</span>
                             </label>
                           </div>
                           <div class="aside-filter__content-box">
                             <label class="aside-filter__content-label">
-                              <input class="filter__checkbox-txt visually-hidden" type="checkbox">
+                              <input class="filter__checkbox-txt visually-hidden" name="promo" type="checkbox">
                               <span class="btn-checked__txt">HIT</span>
                             </label>
                           </div>
                           <div class="aside-filter__content-box">
                             <label class="aside-filter__content-label">
-                              <input class="filter__checkbox-txt visually-hidden" type="checkbox">
+                              <input class="filter__checkbox-txt visually-hidden" name="promo" type="checkbox">
                                 <span class="btn-checked__txt">ДИЛЕР</span>
                             </label>
                           </div>
@@ -440,25 +440,25 @@
                         <div class="aside-filter__content">
                           <div class="aside-filter__content-box">
                             <label class="aside-filter__content-label">
-                              <input class="filter__checkbox visually-hidden" type="checkbox" checked>
+                              <input class="filter__checkbox visually-hidden" name="country" type="checkbox" checked>
                               <span>Россия</span>
                             </label>
                           </div>
                           <div class="aside-filter__content-box">
                             <label class="aside-filter__content-label">
-                              <input class="filter__checkbox visually-hidden" type="checkbox" checked>
+                              <input class="filter__checkbox visually-hidden" name="country" type="checkbox" checked>
                               <span>Германия</span>
                             </label>
                           </div>
                           <div class="aside-filter__content-box">
                             <label class="aside-filter__content-label">
-                              <input class="filter__checkbox visually-hidden" type="checkbox">
+                              <input class="filter__checkbox visually-hidden" name="country" type="checkbox">
                               <span>Китай</span>
                             </label>
                           </div>
                           <div class="aside-filter__content-box">
                             <label class="aside-filter__content-label">
-                              <input class="filter__checkbox visually-hidden" type="checkbox">
+                              <input class="filter__checkbox visually-hidden" name="country" type="checkbox">
                               <span>CША</span>
                             </label>
                           </div>

@@ -1,5 +1,5 @@
 .menu-categories {
-  background-color: #F0F0F4;
+  background-color: $base;
   display: flex;
   justify-content: space-around;
   font-weight: 400;
@@ -9,7 +9,7 @@
   &__link {
     position: relative;
     /*transform: translate(-50%, -50%);*/
-    transition: all .3s;
+    transition: all 0.3s;
     font-weight: 400;
     padding: 15px 0 14px;
   }
@@ -20,15 +20,15 @@
     width: 0;
     right: 0;
     left: auto;
-    background-color: #1C62CD;
+    background-color: $active;
     height: 3px;
     bottom: -2px;
-    transition: all .3s;
+    transition: all 0.3s;
   }
 
   &__link:hover {
-    color: #000000;
-    text-shadow: 0 0 .65px #000000, 0 0 .65px #000000;
+    color: $main-text;
+    text-shadow: 0 0 0.65px $main-text, 0 0 0.65px $main-text;
   }
 
   &__link:hover::before {

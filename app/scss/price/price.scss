@@ -1,19 +1,19 @@
 .price {
-  font-family: 'Barlow', sans-serif;
+  @extend %barlow-regular;
   position: relative;
 
   &__new {
-    font-weight: 700;
+    font-weight: $bold;
     font-size: 27px;
-    line-height: 32px;
-    color: #1C62CD;
+    line-height: $lh-extra-big;
+    color: $active;
     margin-right: 6px;
     padding-right: 20px;
 
     &::after {
       content: "";
       position: absolute;
-      background-image: url('../images/icon-price.svg');
+      background-image: url("../images/icon-price.svg");
       background-repeat: no-repeat;
       right: 0;
       top: 8px;
@@ -24,19 +24,19 @@
 
   &__old {
     display: inline-block;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 17px;
-    color: #C4C4C4;
+    font-weight: $regular;
+    font-size: $fs-smaller;
+    line-height: $lh-extra-small;
+    color: $additional;
     margin-right: 15px;
-    background-image: url('../images/old-line.svg');
+    background-image: url("../images/old-line.svg");
     padding: 2px 5px;
     background-repeat: no-repeat;
 
     &::after {
       content: "";
       position: absolute;
-      background-image: url('../images/icon-price-old.svg');
+      background-image: url("../images/icon-price-old.svg");
       background-repeat: no-repeat;
       right: -10px;
       top: 5px;
