@@ -4,8 +4,7 @@
     justify-content: space-between;
     align-items: center;
     min-height: 122px;
-    font-family: "SFProDisplay-Bold", sans-serif;
-    font-weight: 700;
+    @extend %sf-bold;
   }
 
   &__box {
@@ -23,7 +22,7 @@
   &__adress::before {
     content: "";
     position: absolute;
-    background-image: url('../images/adress-icon.svg');
+    background-image: url("../images/adress-icon.svg");
     background-repeat: no-repeat;
     width: 30px;
     height: 40px;
@@ -32,7 +31,7 @@
   }
 
   &__adress:hover {
-    color: #1C62CD;
+    color: $active;
   }
 
   &__bottom {

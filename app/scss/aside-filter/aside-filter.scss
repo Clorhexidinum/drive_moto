@@ -2,31 +2,30 @@
   &__btn {
     display: none;
   }
-  
+
   &__tabs {
     display: flex;
     justify-content: space-between;
   }
 
   &__tab {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
+    font-weight: $regular;
+    font-size: $fs-small;
+    line-height: $lh-small;
     letter-spacing: 0.09em;
     text-transform: uppercase;
-    color: #C4C4C4;
+    color: $additional;
     width: 50%;
   }
 
   &__tab.tab--active {
-    font-family: "SFProDisplay-Bold", sans-serif;
-    color: #2F3035;
-    font-weight: 700;
+    @extend %sf-bold;
+    color: $main-text;
   }
 
-  &__tab.tab--active span{
+  &__tab.tab--active span {
     display: inline-block;
-    border-bottom: 2px solid #1C62CD;
+    border-bottom: 2px solid $active;
     padding-bottom: 7px;
   }
 
@@ -35,10 +34,9 @@
   }
 
   &__item-title {
-    font-family: "SFProDisplay-Semibold", sans-serif;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 19px;
+    @extend %sf-semibold;
+    font-size: $fs-small;
+    line-height: $lh-small;
     padding-left: 26px;
   }
 
@@ -48,9 +46,9 @@
   }
 
   &__item-title-drop::before {
-    content: '';
+    content: "";
     position: absolute;
-    background-image: url('../images/arrow-down.svg');
+    background-image: url("../images/arrow-down.svg");
     left: 0;
     bottom: 5px;
     width: 12px;
@@ -61,7 +59,7 @@
   &__item-title-drop--active::before {
     transform: rotate(180deg);
   }
-  
+
   &__content {
     display: none;
     flex-wrap: wrap;
@@ -72,16 +70,14 @@
     display: flex;
   }
 
-  
-
   &__content-label > span::before {
-    content: '';
+    content: "";
     display: inline-block;
     width: 1em;
     height: 1em;
     flex-shrink: 0;
     flex-grow: 0;
-    border: 1px solid #adb5bd;
+    border: 1px solid $additional;
     border-radius: 0.25em;
     margin-right: 0.5em;
     background-repeat: no-repeat;
@@ -99,39 +95,39 @@
   }
 
   &__content-label > input:not(:disabled):not(:checked) + span:hover::before {
-    border-color: #1C62CD;
+    border-color: $active;
   }
 
   &__content-label > input:not(:disabled):active + span::before {
-    background-color: #1C62CD;
-    border-color: #1C62CD;
+    background-color: $active;
+    border-color: $active;
   }
 
   &__content-label > input:not(:disabled):active + span::before {
-    background-color: #1C62CD;
-    border-color: #1C62CD;
+    background-color: $active;
+    border-color: $active;
   }
 
   &__content-label > input:focus:not(:checked) + span::before {
-    border-color: #1C62CD;
+    border-color: $active;
   }
-  
+
   &__content-label > input:checked + span::before {
-    border-color: #1C62CD;
-    background-color: #1C62CD;
+    border-color: $active;
+    background-color: $active;
   }
 
   &__content-label > input:checked + .btn-checked__txt {
-    color: #ffffff;
+    color: $base;
   }
 
   &__content-label > .filter__checkbox:checked + span::before {
     background-image: url("../images/checked-icon.svg");
     background-size: contain;
   }
-  
+
   &__content-label > input:disabled + span::before {
-    background-color: #e9ecef;
+    background-color: $base;
   }
 
   &__content.aside-filter__content-radio {
@@ -144,8 +140,8 @@
   }
 
   &__content-label {
-    font-size: 14px;
-    line-height: 17px;
+    font-size: $fs-smaller;
+    line-height: $lh-extra-small;
     cursor: pointer;
     position: relative;
   }
@@ -157,15 +153,14 @@
   &__item-box {
     display: flex;
     justify-content: space-between;
-    border-bottom: 2px solid #C4C4C4;
+    border-bottom: 2px solid $additional;
     padding-top: 34px;
   }
 
   &__item-list-title {
-    font-family: "SFProDisplay-Semibold", sans-serif;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 19px;
+    @extend %sf-semibold;
+    font-size: $fs-small;
+    line-height: $lh-small;
     padding-bottom: 14px;
     padding-left: 26px;
   }
@@ -175,11 +170,11 @@
   }
 
   &__more-btn {
-    font-size: 14px;
-    line-height: 17px;
-    color: #1C62CD;
+    font-size: $fs-smaller;
+    line-height: $lh-extra-small;
+    color: $active;
     border: none;
-    border-bottom: 1px solid #1C62CD;
+    border-bottom: 1px solid $active;
     background-color: transparent;
     cursor: pointer;
     padding: 0;
@@ -187,7 +182,7 @@
 
   &__search {
     width: 100%;
-    border: 1px solid #E0E0E0;
+    border: 1px solid $additional_light;
     height: 30px;
     padding: 0 20px;
     font-size: 12px;
@@ -197,7 +192,7 @@
   }
 
   &__search::placeholder {
-    color: #BDBEC2;
+    color: $placeholder;
   }
 
   &__item-btn {
@@ -205,12 +200,12 @@
   }
 
   &__btn-send {
-    font-size: 15px;
-    line-height: 18px;
+    font-size: $fs-smaller;
+    line-height: $lh-extra-small;
     letter-spacing: 0.12em;
     text-transform: uppercase;
-    background: #F0F0F4;
-    color: #BDBEC2;
+    background: $base;
+    color: $placeholder;
     padding: 16px 82px;
     border: none;
     cursor: pointer;
@@ -218,20 +213,20 @@
   }
 
   &__btn-send:hover {
-    background-color: #1C62CD;
-    color: #ffffff;
+    background-color: $active;
+    color: $base;
   }
 
   &__btn-send--active {
-    background-color: #1C62CD;
-    color: #ffffff;
+    background-color: $active;
+    color: $base;
   }
 
   &__extra {
     display: inline-block;
-    font-size: 13px;
-    line-height: 16px;
-    color: #2F3035;
+    font-size: $fs-smaller;
+    line-height: $lh-extra-small;
+    color: $main-text;
     position: relative;
     cursor: pointer;
     padding-right: 29px;
@@ -241,7 +236,7 @@
   &__extra::after {
     content: "";
     position: absolute;
-    background-image: url('../images/arrow-down.svg');
+    background-image: url("../images/arrow-down.svg");
     width: 12px;
     height: 6px;
     top: 4px;
@@ -257,14 +252,14 @@
   }
 
   &__btn-reset {
-    font-size: 13px;
-    line-height: 16px;
+    font-size: $fs-smaller;
+    line-height: $lh-extra-small;
     background-color: transparent;
     padding: 0;
     border: none;
-    border-bottom: 1px solid #C4C4C4;
+    border-bottom: 1px solid $additional;
     display: inline-block;
-    color: #C4C4C4;
+    color: $additional;
     cursor: pointer;
   }
 

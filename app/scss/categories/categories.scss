@@ -7,13 +7,13 @@
 
   &__item {
     margin-bottom: 30px;
-    border: 1px solid #CDCDCD;
+    border: 1px solid $additional;
     border-radius: 3px;
     width: 370px;
     display: flex;
     padding: 20px 20px 16px;
     justify-content: space-between;
-    transition: all .3s;
+    transition: all 0.3s;
   }
 
   &__item:hover {
@@ -21,25 +21,24 @@
   }
 
   &__item-title {
-    font-family: 'Barlow', sans-serif;
-    font-weight: 700;
-    font-size: 23px;
-    line-height: 28px;
-    transition: all .3s;
+    @extend %barlow-bold;
+    font-size: $fs-big;
+    line-height: $lh-bigger;
+    transition: all 0.3s;
   }
 
   &__item:hover &__item-title {
-    color: #1C62CD;
+    color: $active;
   }
 
   &__item-text {
-    font-size: 14px;
-    line-height: 17px;
-    color: #C4C4C4;
+    font-size: $fs-smaller;
+    line-height: $lh-extra-small;
+    color: $additional;
   }
 
   &__item-text::after {
-    content: url('../images/link-arrow.svg');
+    content: url("../images/link-arrow.svg");
     padding-left: 2px;
   }
 

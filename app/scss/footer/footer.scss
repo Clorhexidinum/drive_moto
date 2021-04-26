@@ -1,5 +1,5 @@
 .footer {
-  background: #F0F0F4;
+  background: $base;
 
   &__top {
     padding-top: 43px;
@@ -15,11 +15,10 @@
   }
 
   &__top-title {
-    font-family: "SFProDisplay-Bold", sans-serif;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 17px;
-    color: #2F3035;
+    @extend %sf-bold;
+    font-size: $fs-smaller;
+    line-height: $lh-extra-small;
+    color: $main-text;
   }
 
   &__top-lewsletter {
@@ -34,25 +33,24 @@
   }
 
   &__form-input {
-    background-color: #ffffff;
+    background-color: $base;
     border: none;
-    font-size: 14px;
-    line-height: 17px;
+    font-size: $fs-smaller;
+    line-height: $lh-extra-small;
     padding: 0 12px;
   }
 
   &__form-input::placeholder {
-    color: #C4C4C4;
+    color: $additional;
   }
 
   &__form-btn {
-    font-family: "SFProDisplay-Semibold", sans-serif;
+    @extend %sf-semibold;
     text-transform: uppercase;
     padding: 10px 16px;
     border: none;
-    background: #1C62CD;
-    color: #ffffff;
-    font-weight: 600;
+    background: $active;
+    color: $base;
     font-size: 11px;
     line-height: 13px;
     letter-spacing: 0.12em;
@@ -60,23 +58,23 @@
   }
 
   &__list {
-    font-size: 14px;
-    line-height: 22px;
-    color: #2F3035;
+    font-size: $fs-smaller;
+    line-height: $lh-smaller;
+    color: $main-text;
   }
 
   &__top-social.footer__top-item {
     width: 250px;
   }
 
-  &__social-list{
+  &__social-list {
     display: flex;
     align-items: center;
     height: 100%;
   }
 
   &__social-item {
-    opacity: .6;
+    opacity: 0.6;
   }
 
   &__social-item:hover {
@@ -86,7 +84,7 @@
   &__social-item + &__social-item {
     margin-left: 30px;
   }
-  
+
   &__bottom {
     display: flex;
     justify-content: center;
@@ -96,7 +94,7 @@
   &__bottom-link {
     font-size: 10px;
     line-height: 12px;
-    color: #48494D;
+    color: #48494d;
     margin: 0 40px;
   }
 

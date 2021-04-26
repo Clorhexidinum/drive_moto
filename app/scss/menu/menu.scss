@@ -3,14 +3,14 @@
     display: none;
     padding: 0;
   }
-  
+
   &__list {
     display: flex;
     align-items: center;
   }
 
   &__item:hover {
-    color: #1C62CD;
+    color: $active;
   }
 
   &__item:not(:last-child) {

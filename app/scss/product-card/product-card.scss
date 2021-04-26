@@ -11,14 +11,14 @@
     width: 500px;
     padding-top: 64px;
     text-align: center;
-    font-family: "Barlow", sans-serif;
+    @extend %barlow-regular;
     display: flex;
     flex-direction: column;
   }
 
   &__img-box::before {
-    font-size: 15px;
-    line-height: 18px;
+    font-size: $fs-smaller;
+    line-height: $lh-small;
     letter-spacing: 0.12em;
     padding: 13px 25px;
     border-radius: 3px;
@@ -30,7 +30,7 @@
   }
 
   &__price-old {
-    font-size: 30px;
+    font-size: $fs-extra-big;
     line-height: 44px;
     opacity: 0.6;
     display: inline-block;
@@ -41,16 +41,16 @@
   }
 
   &__price-new {
-    font-weight: bold;
+    font-weight: $bold;
     font-size: 40px;
     line-height: 48px;
     margin-bottom: 17px;
   }
 
   &__link {
-    font-size: 15px;
-    line-height: 18px;
-    color: #1c62cd;
+    font-size: $fs-smaller;
+    line-height: $lh-extra-small;
+    color: $active;
   }
 
   &__content {
@@ -58,17 +58,16 @@
   }
 
   &__title {
-    font-family: "SFProDisplay-Bold", sans-serif;
-    font-weight: bold;
-    font-size: 30px;
+    @extend %sf-bold;
+    font-size: $fs-extra-big;
     line-height: 36px;
     margin-bottom: 10px;
   }
 
   &__code {
-    font-size: 15px;
-    line-height: 18px;
-    color: #2f3035;
+    font-size: $fs-smaller;
+    line-height: $lh-small;
+    color: $main-text;
     opacity: 0.6;
     margin-bottom: 22px;
   }
@@ -82,9 +81,9 @@
   }
 
   &__tab {
-    font-size: 20px;
-    line-height: 24px;
-    color: #2f3035;
+    font-size: $fs-bigger;
+    line-height: $lh-medium;
+    color: $main-text;
     opacity: 0.6;
     padding-bottom: 7px;
     padding-right: 17px;
@@ -97,9 +96,8 @@
 
   &__tab.tab--active {
     opacity: 1;
-    border-bottom: 2px solid #1c62cd;
-    font-weight: bold;
-    font-family: "SFProDisplay-Bold", sans-serif;
+    border-bottom: 2px solid $active;
+    @extend %sf-bold;
   }
 
   &__list {
@@ -123,21 +121,21 @@
   }
 
   &__more {
-    font-size: 14px;
-    line-height: 17px;
-    color: #1c62cd;
-    border-bottom: 1px solid #1c62cd;
+    font-size: $fs-smaller;
+    line-height: $lh-extra-small;
+    color: $active;
+    border-bottom: 1px solid $active;
     margin-bottom: 40px;
   }
 
   &__btn button {
-    font-size: 14px;
-    line-height: 17px;
+    font-size: $fs-smaller;
+    line-height: $lh-extra-small;
     letter-spacing: 0.12em;
     text-transform: uppercase;
-    color: #ffffff;
+    color: $base;
     padding: 16px 56px;
-    background: #1c62cd;
+    background: $active;
     border-radius: 3px;
     border: none;
     cursor: pointer;

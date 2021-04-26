@@ -1,7 +1,7 @@
 .sale-item {
   max-width: 265px;
   text-align: center;
-  border: 1px solid #CDCDCD;
+  border: 1px solid $additional;
   border-radius: 3px;
   display: flex;
   flex-direction: column;
@@ -15,8 +15,8 @@
   }
 
   &__info {
-    color: #ffffff;
-    background-color: #1C62CD;
+    color: $base;
+    background-color: $active;
     padding: 8px 20px;
     text-transform: uppercase;
     font-size: 12px;
@@ -33,24 +33,22 @@
   }
 
   &__title {
-    font-family: "SFProDisplay-Bold", sans-serif;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 21px;
+    @extend %sf-bold;
+    font-size: $fs-medium;
+    line-height: $lh-smaller;
     margin-bottom: 7px;
   }
 
   &__footer {
-    background-color: #F0F0F4;
+    background-color: $base;
     padding: 25px 20px;
-    font-size: 18px;
-    line-height: 21px;
+    font-size: $fs-medium;
+    line-height: $lh-smaller;
   }
 
   &__footer span {
-    font-weight: 700;
-    color: #1C62CD;
+    @extend %barlow-bold;
+    color: $active;
     display: block;
-    font-family: 'Barlow', sans-serif;
   }
 }

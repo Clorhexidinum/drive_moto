@@ -46,7 +46,7 @@
     font-size: 0;
     width: 11px;
     height: 11px;
-    border: 1px solid #ffffff;
+    border: 1px solid $base;
     border-radius: 50%;
     cursor: pointer;
     outline: none;
@@ -55,7 +55,7 @@
 }
 
 .slick-active button {
-  background-color: #ffffff;
+  background-color: $base;
 }
 
 .slick-slide img {

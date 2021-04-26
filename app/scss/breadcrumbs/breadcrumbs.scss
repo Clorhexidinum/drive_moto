@@ -6,16 +6,16 @@
     padding-right: 16px;
     margin-right: 10px;
     position: relative;
-    font-size: 15px;
-    line-height: 18px;
-    color: #C4C4C4;
+    font-size: $fs-smaller;
+    line-height: $lh-extra-small;
+    color: $additional;
   }
 
   &__list-item::after {
-    content: '';
+    content: "";
     position: absolute;
     right: 0;
-    background-image: url('../images/link-arrow.svg');
+    background-image: url("../images/link-arrow.svg");
     width: 5px;
     height: 9px;
     bottom: 4px;

@@ -1,10 +1,10 @@
 .menu-mobile {
   &__list {
     width: 243px;
-    transition: all .3s;
+    transition: all 0.3s;
     position: absolute;
     z-index: 10;
-    background-color: #fff;
+    background-color: $base;
     transform: translateX(-100%);
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
   }
@@ -39,12 +39,11 @@
   }
 
   &__line-wrapper {
+    @extend %sf-bold;
     display: none;
-    font-weight: bold;
-    font-size: 20px;
-    line-height: 24px;
-    background-color: #F0F0F4;
-    font-family: "SFProDisplay-Bold", sans-serif;
+    font-size: $fs-bigger;
+    line-height: $lh-medium;
+    background-color: $base;
     overflow-x: scroll;
   }
 
@@ -52,7 +51,7 @@
     display: flex;
     align-items: center;
     width: 420px;
-    color: #2F3035;
+    color: $main-text;
     padding: 14px 0 14px 15px;
     margin: 0 auto;
   }

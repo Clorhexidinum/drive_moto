@@ -20,7 +20,7 @@
     }
   }
 
-  .banner-promo-link img{
+  .banner-promo-link img {
     width: 100%;
     object-fit: cover;
   }
@@ -33,7 +33,7 @@
 }
 
 @media (max-width: 1100px) {
-  .menu__item +.menu__item {
+  .menu__item + .menu__item {
     padding: 20px;
   }
 
@@ -70,7 +70,7 @@
     }
 
     &__btn-line {
-      background-color: #2F3035;
+      background-color: #2f3035;
       border-radius: 3px;
       height: 3px;
       width: 34px;
@@ -127,7 +127,7 @@
       font-size: 0;
       line-height: 0;
       padding: 17px;
-      background-image: url('../images/search.svg');
+      background-image: url("../images/search.svg");
       background-repeat: no-repeat;
       width: 24px;
       height: 24px;
@@ -162,12 +162,12 @@
     &__btn {
       display: block;
       text-transform: uppercase;
-      font-weight: 700;
+      font-weight: $bold;
       text-align: center;
       padding: 15px 0;
       width: 100%;
-      color: #ffffff;
-      background-color: #1C62CD;
+      color: $base;
+      background-color: $active;
       margin-bottom: 30px;
     }
 
@@ -180,13 +180,13 @@
     &__content {
       order: -1;
     }
-    
+
     &__btn-mobile {
       display: block;
       margin-top: 40px;
     }
 
-    &__inner{
+    &__inner {
       flex-wrap: wrap;
     }
 
@@ -235,7 +235,7 @@
   // }
 
   .card {
-    &__top-line label{
+    &__top-line label {
       display: block;
       width: 100%;
       margin-bottom: 25px;
@@ -258,7 +258,7 @@
     &__list-item-title {
       display: none;
     }
-  } 
+  }
 }
 
 @media (max-width: 640px) {
@@ -269,7 +269,7 @@
   }
 
   .banner-slider {
-    .container{
+    .container {
       padding: 0;
     }
 
@@ -299,7 +299,7 @@
 
     &__top-item {
       width: 100%;
-      border-bottom: 2px solid #F9F9FC;
+      border-bottom: 2px solid $base;
     }
 
     &__top-item:not(:first-child) {
@@ -307,7 +307,7 @@
     }
 
     &__top-item:not(:last-child) {
-      border-bottom: 2px solid #F9F9FC;
+      border-bottom: 2px solid $base;
     }
 
     &__bottom {
@@ -318,7 +318,7 @@
     &__bottom-link {
       margin: 12px 0;
     }
-    
+
     &__top-social {
       width: 100%;
     }
@@ -329,9 +329,9 @@
 
     &__top-title {
       font-weight: 500;
-      font-size: 14px;
-      line-height: 18px;
-      color: #7F7F7F;
+      font-size: $fs-smaller;
+      line-height: $lh-small;
+      color: #7f7f7f;
       padding: 15px 0;
     }
 
@@ -342,8 +342,8 @@
 
     &__topdrop::after {
       position: absolute;
-      content: '';
-      background-image: url('../images/arrow-down.svg');
+      content: "";
+      background-image: url("../images/arrow-down.svg");
       right: 0;
       top: 21px;
       width: 12px;
@@ -365,8 +365,8 @@
 
   .product-card {
     &__title {
-      font-size: 20px;
-      line-height: 24px;
+      font-size: $fs-bigger;
+      line-height: $lh-medium;
       margin-left: 0;
     }
 
@@ -374,7 +374,7 @@
       width: 100%;
     }
 
-    &__button a + a{
+    &__button a + a {
       margin-left: 0;
     }
   }
