@@ -89,6 +89,33 @@
     background-image: url("../images/favorite-active.svg");
   }
 
+  &__compare {
+    position: absolute;
+    top: 16px;
+    right: 19px;
+    width: 24px;
+    height: 22px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    z-index: 50;
+    cursor: pointer;
+  }
+
+  &__compare::before {
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 22px;
+    top: 0;
+    left: 30px;
+    background-image: url("../images/favorite.svg");
+  }
+
+  &__compare--active::before {
+    background-image: url("../images/favorite-active.svg");
+  }
+
   &__basket {
     position: absolute;
     width: 60px;

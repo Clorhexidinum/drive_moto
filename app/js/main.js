@@ -67,24 +67,25 @@ $(function () {
   //   });
 });
 
-// let a = new Product(goodsList[0]);
-// const goodsOut = document.querySelector('.catalog__product-list');
-// let cardTemlate = document.querySelector('#product');
-
-// for(let i = 0; i < goodsList.length; i++) {
-//   let aa = new Product(goodsList[i]);
-//   aa.renderCard(goodsOut, cardTemlate);
-// }
-
 // кнопка добавить в любимое (favorite)
+
+function active(elem, cssclass) {
+  elem.forEach((item) => {
+    item.addEventListener("click", () => {
+      item.classList.toggle(cssclass);
+    });
+  });
+}
 
 const favorite = document.querySelectorAll(".product-item__favorite");
 
-favorite.forEach((elem) => {
-  elem.addEventListener("click", () => {
-    elem.classList.toggle("product-item__favorite--active");
-  });
-});
+active(favorite, "product-item__favorite--active");
+
+// кнопка добавить в сравнение (compare)
+
+const compare = document.querySelectorAll(".product-item__compare");
+
+active(favorite, "product-item__compare--active");
 
 // Мобильное меню
 const menuBtn = document.querySelector(".menu__btn");
@@ -106,12 +107,12 @@ footerTitle.forEach((elem) => {
 // Табы
 
 const tabsBtn = document.querySelectorAll(".tab");
-const tabsContent = document.querySelectorAll(".tabs__content");
 
 tabsBtn.forEach((elem) => {
   elem.addEventListener("click", (evt) => {
     evt.preventDefault();
 
+    const tabsContent = document.querySelectorAll(".tabs__content");
     const tabId = elem.getAttribute("href");
     const currentTab = document.querySelector(tabId);
 
@@ -129,11 +130,3 @@ tabsBtn.forEach((elem) => {
     }
   });
 });
-
-// fetch("db.json")
-//   .then((data) => data.json())
-//   .then((res) => console.log(res));
-
-// let cart = {
-//   ''
-// }

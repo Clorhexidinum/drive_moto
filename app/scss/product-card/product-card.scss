@@ -132,13 +132,7 @@
     font-size: $fs-smaller;
     line-height: $lh-extra-small;
     letter-spacing: 0.12em;
-    text-transform: uppercase;
-    color: $base;
     padding: 16px 56px;
-    background: $active;
-    border-radius: 3px;
-    border: none;
-    cursor: pointer;
   }
 
   &__btn-mobile {

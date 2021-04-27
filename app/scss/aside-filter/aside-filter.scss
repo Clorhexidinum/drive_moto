@@ -203,23 +203,8 @@
     font-size: $fs-smaller;
     line-height: $lh-extra-small;
     letter-spacing: 0.12em;
-    text-transform: uppercase;
-    background: $base;
-    color: $placeholder;
     padding: 16px 82px;
-    border: none;
-    cursor: pointer;
     margin-bottom: 15px;
-  }
-
-  &__btn-send:hover {
-    background-color: $active;
-    color: $base;
-  }
-
-  &__btn-send--active {
-    background-color: $active;
-    color: $base;
   }
 
   &__extra {

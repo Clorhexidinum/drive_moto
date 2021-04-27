@@ -94,15 +94,10 @@
     margin-left: auto;
   }
 
-  &__list-btn button{
+  &__list-button {
     font-size: $fs-smaller;
     line-height: $lh-extra-small;
     letter-spacing: 0.12em;
-    color: $base;
-    background-color: $active;
-    border-radius: 3px;
     padding: 9px 40px;
-    border: none;
-    text-transform: uppercase;
   }
 }

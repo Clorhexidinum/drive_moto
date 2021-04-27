@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Document</title>
-    <link rel="stylesheet" href="css/style.min.css" />
+    <!-- <link rel="stylesheet" href="css/style.min.css" /> -->
+    <link rel="stylesheet" href="css/style.css" />
     <!-- <link rel="stylesheet" href="css/media.min.css"> -->
     <link
       href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&display=swap"
@@ -338,7 +339,7 @@
                     type="text"
                     placeholder="Введите номер"
                   />
-                  <button class="search__content-btn" type="submit">
+                  <button class="search__content-btn btn" type="submit">
                     искать
                   </button>
                 </form>
@@ -350,7 +351,7 @@
                     type="text"
                     placeholder="Введите марку"
                   />
-                  <button class="search__content-btn" type="submit">
+                  <button class="search__content-btn btn" type="submit">
                     искать
                   </button>
                 </form>
@@ -362,7 +363,7 @@
                     type="text"
                     placeholder="Введите название товара"
                   />
-                  <button class="search__content-btn" type="submit">
+                  <button class="search__content-btn btn" type="submit">
                     искать
                   </button>
                 </form>
@@ -375,6 +376,18 @@
       <section class="categories page-section">
         <div class="container">
           <div class="categories__inner">
+            <template id="categories">
+              <a class="categories__item" href="#">
+                <div class="categories__item-info">
+                  <h4 class="categories__item-title">Category name</h4>
+                  <p class="categories__item-text">Подробее</p>
+                </div>
+                <div class="categories__item-img">
+                  <img src="#" alt="" />
+                </div>
+              </a>
+            </template>
+
             <a class="categories__item" href="#">
               <div class="categories__item-info">
                 <h4 class="categories__item-title">Квадроциклы</h4>
@@ -435,19 +448,25 @@
 
       <div class="selection page-section">
         <div class="container">
-          <form class="selection__form" action="#">
-            <div class="selection__box">
-              <h3 class="selection__title">
+          <form class="subscription__form" action="#">
+            <div class="subscription__box">
+              <h4 class="subscription__title">
                 Пожем в выборе мототехники по вашим параметрам
-              </h3>
+              </h4>
               <div>
                 <label>
-                  <input type="number" name="selection" />
+                  <input type="tel" name="selection" />
                 </label>
-                <button type="submit">Отправить</button>
+                <button type="submit" class="btn subscription__btn">
+                  Отправить
+                </button>
               </div>
             </div>
-            <img class="selection__img" src="#" alt="" />
+            <img
+              class="subscription__img"
+              src="images/content/banner-selection.jpg"
+              alt=""
+            />
           </form>
         </div>
       </div>
@@ -801,16 +820,29 @@
 
       <div class="mailing page-section">
         <div class="container">
-          <form class="mailing__form" action="#">
-            <h3 class="mailing__title">
-              Подписывайтесь на нашу рассылку с новостями и акциями
-            </h3>
-            <div>
-              <label>
-                <input type="email" name="mailing" />
-              </label>
-              <button type="submit">Подписаться</button>
+          <form class="subscription__form" action="#">
+            <div class="subscription__box">
+              <h3 class="subscription__title">
+                Подписывайтесь на нашу рассылку с новостями и акциями
+              </h3>
+              <div>
+                <label>
+                  <input
+                    type="email"
+                    name="mailing"
+                    class="subscription__input"
+                  />
+                </label>
+                <button type="submit" class="btn subscription__btn">
+                  Подписаться
+                </button>
+              </div>
             </div>
+            <img
+              class="subscription__img"
+              src="images/content/banner-selection.jpg"
+              alt=""
+            />
           </form>
         </div>
       </div>
@@ -830,7 +862,7 @@
                   type="text"
                   placeholder="Введите ваш e-mail:"
                 />
-                <button class="footer__form-btn" type="submit">
+                <button class="footer__form-btn btn" type="submit">
                   Отправить
                 </button>
               </form>
