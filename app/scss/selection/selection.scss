@@ -1,0 +1,27 @@
+.subscription {
+  &__form {
+    border: 1px solid red;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__box {
+    padding: 30px 50px;
+  }
+
+  &__title {
+    @extend %barlow-bold;
+    font-size: $fs-big;
+    line-height: $lh-big;
+    margin-bottom: 25px;
+  }
+
+  &__input {
+    background: $base;
+    border-radius: 3px;
+    border: none;
+    padding: 5px 20px;
+    font-size: $fs-small;
+    line-height: $lh-small;
+  }
+}

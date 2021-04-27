@@ -2,9 +2,8 @@
   margin-bottom: 100px;
 
   &__title {
-    font-family: "SFProDisplay-Bold", sans-serif;
-    font-weight: 700;
-    font-size: 30px;
+    @extend %sf-bold;
+    font-size: $fs-extra-big;
     line-height: 36px;
     margin-bottom: 26px;
   }
@@ -16,11 +15,11 @@
   }
 
   &__filter-items button {
-    font-size: 14px;
-    line-height: 17px;
+    font-size: $fs-smaller;
+    line-height: $lh-extra-small;
     opacity: 0.7;
     border: none;
-    background: #f0f0f4;
+    background: $base
     border-radius: 3px;
     padding: 5px 22px;
     cursor: pointer;
@@ -87,10 +86,10 @@
   }
 
   &__select-item {
-    border: 2px solid #f0f0f4;
+    border: 2px solid $base;
     outline: none;
     margin-right: 5px;
     padding: 3px;
-    font-size: 13px;
+    font-size: $fs-extra-small;
   }
 }

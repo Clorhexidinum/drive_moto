@@ -63,3 +63,12 @@ body {
   height: 1px;
   margin: -1px;
 }
+
+.btn {
+  cursor: pointer;
+  background-color: $active;
+  color: $base;
+  border: none;
+  border-radius: 3px;
+  text-transform: uppercase;
+}

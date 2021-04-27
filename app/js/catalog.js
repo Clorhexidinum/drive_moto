@@ -38,3 +38,12 @@ asideFilterBtn.forEach((elem) => {
     elem.classList.toggle("aside-filter__item-title-drop--active");
   });
 });
+
+let a = new Product(goodsList[0]);
+const goodsOut = document.querySelector(".catalog__product-list");
+let cardTemlate = document.querySelector("#product");
+
+for (let i = 0; i < goodsList.length; i++) {
+  let aa = new Product(goodsList[i]);
+  aa.renderCard(goodsOut, cardTemlate);
+}

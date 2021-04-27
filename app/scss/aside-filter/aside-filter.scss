@@ -175,7 +175,7 @@
     color: $active;
     border: none;
     border-bottom: 1px solid $active;
-    background-color: transparent;
+    background-color: $transparent;
     cursor: pointer;
     padding: 0;
   }
@@ -185,8 +185,8 @@
     border: 1px solid $additional_light;
     height: 30px;
     padding: 0 20px;
-    font-size: 12px;
-    line-height: 14px;
+    font-size: $fs-extra-small;
+    line-height: $lh-extra-smaller;
     margin-top: 10px;
     margin-bottom: 20px;
   }
@@ -203,23 +203,8 @@
     font-size: $fs-smaller;
     line-height: $lh-extra-small;
     letter-spacing: 0.12em;
-    text-transform: uppercase;
-    background: $base;
-    color: $placeholder;
     padding: 16px 82px;
-    border: none;
-    cursor: pointer;
     margin-bottom: 15px;
-  }
-
-  &__btn-send:hover {
-    background-color: $active;
-    color: $base;
-  }
-
-  &__btn-send--active {
-    background-color: $active;
-    color: $base;
   }
 
   &__extra {
@@ -254,7 +239,7 @@
   &__btn-reset {
     font-size: $fs-smaller;
     line-height: $lh-extra-small;
-    background-color: transparent;
+    background-color: $transparent;
     padding: 0;
     border: none;
     border-bottom: 1px solid $additional;

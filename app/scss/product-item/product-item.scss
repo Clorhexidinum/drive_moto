@@ -56,7 +56,7 @@
   }
 
   &__title {
-    font-weight: normal;
+    font-weight: $regular;
     padding: 14px 0 25px;
     font-size: $fs-medium;
     line-height: $lh-smaller;
@@ -89,6 +89,33 @@
     background-image: url("../images/favorite-active.svg");
   }
 
+  &__compare {
+    position: absolute;
+    top: 16px;
+    right: 19px;
+    width: 24px;
+    height: 22px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    z-index: 50;
+    cursor: pointer;
+  }
+
+  &__compare::before {
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 22px;
+    top: 0;
+    left: 30px;
+    background-image: url("../images/favorite.svg");
+  }
+
+  &__compare--active::before {
+    background-image: url("../images/favorite-active.svg");
+  }
+
   &__basket {
     position: absolute;
     width: 60px;
@@ -105,7 +132,7 @@
   }
 
   &__price {
-    font-weight: 700;
+    font-weight: $bold;
     font-size: $fs-extra-big;
     line-height: 36px;
   }
@@ -145,8 +172,8 @@
     color: $base;
     position: absolute;
     text-transform: uppercase;
-    font-size: 12px;
-    line-height: 14px;
+    font-size: $fs-extra-small;
+    line-height: $lh-extra-smaller;
     letter-spacing: 0.07em;
     top: 0;
     left: 0;
