@@ -20,9 +20,9 @@
           <div class="header__top-inner">
             <nav class="menu">
               <button class="menu__btn">
-                <div class="menu__btn-line"></div>
-                <div class="menu__btn-line"></div>
-                <div class="menu__btn-line"></div>
+                <span class="menu__btn-line"></span>
+                <span class="menu__btn-line"></span>
+                <span class="menu__btn-line"></span>
               </button>
               <ul class="menu__list">
                 <li class="menu__item">
@@ -103,96 +103,17 @@
       </div>
       <div class="menu-mobile">
         <ul class="menu-mobile__list">
-          <li class="menu-mobile__item">
-            <a class="menu-mobile__link" href="#">
-              <img class="menu-mobile__img" src="images/user.svg" alt="" />
-              <p>Войти</p>
-            </a>
-          </li>
-          <li class="menu-mobile__item">
-            <a class="menu-mobile__link" href="#">
-              <img class="menu-mobile__img" src="images/user.svg" alt="" />
-              <p>Регистрация</p>
-            </a>
-          </li>
-          <li class="menu-mobile__item">
-            <a class="menu-mobile__link" href="#">
-              <img class="menu-mobile__img" src="images/heart.svg" alt="" />
-              <p>Избранное</p>
-            </a>
-          </li>
-          <li class="menu-mobile__item">
-            <a class="menu-mobile__link" href="#">
-              <img class="menu-mobile__img" src="images/basket.svg" alt="" />
-              <p>Корзина</p>
-            </a>
-          </li>
-          <li class="menu-mobile__item">
-            <a class="menu-mobile__link" href="#">
-              <img class="menu-mobile__img" src="images/house.svg" alt="" />
-              <p>Магазины</p>
-            </a>
-          </li>
-          <li class="menu-mobile__item">
-            <a class="menu-mobile__link" href="#">
-              <img class="menu-mobile__img" src="images/percent.svg" alt="" />
-              <p>Акции</p>
-            </a>
-          </li>
-          <li class="menu-mobile__item">
-            <a class="menu-mobile__link" href="#">
-              <img class="menu-mobile__img" src="images/box.svg" alt="" />
-              <p>Доставка и оплата</p>
-            </a>
-          </li>
-          <li class="menu-mobile__item">
-            <a class="menu-mobile__link" href="#">
-              <p>Квадроциклы</p>
-            </a>
-          </li>
-          <li class="menu-mobile__item">
-            <a class="menu-mobile__link" href="#">
-              <p>Катера</p>
-            </a>
-          </li>
-          <li class="menu-mobile__item">
-            <a class="menu-mobile__link" href="#">
-              <p>Гидроциклы</p>
-            </a>
-          </li>
-          <li class="menu-mobile__item">
-            <a class="menu-mobile__link" href="#">
-              <p>Лодки</p>
-            </a>
-          </li>
-          <li class="menu-mobile__item">
-            <a class="menu-mobile__link" href="#">
-              <p>Вездеходы</p>
-            </a>
-          </li>
-          <li class="menu-mobile__item">
-            <a class="menu-mobile__link" href="#">
-              <p>Снегоходы</p>
-            </a>
-          </li>
-          <li class="menu-mobile__item">
-            <a class="menu-mobile__link" href="#">
-              <p>Двигатели</p>
-            </a>
-          </li>
-          <li class="menu-mobile__item">
-            <a class="menu-mobile__link" href="#">
-              <p>Запчасти</p>
-            </a>
-          </li>
-          <li class="menu-mobile__item">
-            <a class="menu-mobile__link" href="#">
-              <p>
-                Москва,<br />
-                ул. Науки 25
-              </p>
-            </a>
-          </li>
+          <template id="menu-mobile-with-img">
+            <li class="menu-mobile__item">
+              <a class="menu-mobile__link" href="#"></a>
+              <img class="menu-mobile__img" src="#" alt="" />
+            </li>
+          </template>
+          <template id="menu-mobile-without-img">
+            <li class="menu-mobile__item">
+              <a class="menu-mobile__link" href="#"></a>
+            </li>
+          </template>
         </ul>
         <div class="menu-mobile__line-wrapper">
           <ul class="menu-mobile__line">
@@ -211,32 +132,11 @@
       <div class="header__bottom">
         <div class="container">
           <ul class="menu-categories">
-            <li class="menu-categories__item">
-              <a class="menu-categories__link" href="#">Квадроциклы</a>
-            </li>
-            <li class="menu-categories__item">
-              <a class="menu-categories__link" href="#">Катера</a>
-            </li>
-            <li class="menu-categories__item">
-              <a class="menu-categories__link" href="catalog.html"
-                >Гидроциклы</a
-              >
-            </li>
-            <li class="menu-categories__item">
-              <a class="menu-categories__link" href="#">Лодки</a>
-            </li>
-            <li class="menu-categories__item">
-              <a class="menu-categories__link" href="#">Вездеходы</a>
-            </li>
-            <li class="menu-categories__item">
-              <a class="menu-categories__link" href="#">Снегоходы</a>
-            </li>
-            <li class="menu-categories__item">
-              <a class="menu-categories__link" href="#">Двигатели</a>
-            </li>
-            <li class="menu-categories__item">
-              <a class="menu-categories__link" href="#">Запчасти</a>
-            </li>
+            <template id="menu-item">
+              <li class="menu-categories__item">
+                <a class="menu-categories__link" href="#">item</a>
+              </li>
+            </template>
           </ul>
         </div>
       </div>
