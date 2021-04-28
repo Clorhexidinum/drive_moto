@@ -130,3 +130,73 @@ tabsBtn.forEach((elem) => {
     }
   });
 });
+
+// Меню
+
+const menuCategories = [
+  "Квадроциклы",
+  "Катера",
+  "Гидроциклы",
+  "Лодки",
+  "Вездеходы",
+  "Снегоходы",
+  "Двигатели",
+  "Запчасти",
+];
+
+const menuMobile = [
+  "Войти",
+  "Регистрация",
+  "Избранное",
+  "Корзина",
+  "Магазины",
+  "Акции",
+  "Доставка и оплата",
+];
+
+const menuMobileImg = [
+  "user.svg",
+  "user.svg",
+  "heart.svg",
+  "basket.svg",
+  "house.svg",
+  "percent.svg",
+  "menu-mobile__img",
+  "box.svg",
+];
+
+const menuAdress = ["Москва,<br />ул. Науки 25"];
+
+const menuCategoriesTempl = document.querySelector("#menu-item");
+const menuMobWithImgTempl = document.querySelector("#menu-mobile-with-img");
+const menuMobWithoutImgTempl = document.querySelector(
+  "#menu-mobile-without-img"
+);
+
+const menuCategoriesParrent = document.querySelector(".menu-categories");
+const menuMobileParrent = document.querySelector(".menu-mobile__list");
+
+function renderCategoriesMenu(template, arr, parrent) {
+  const link = template.content.querySelector("a");
+  const img = template.content.querySelector("img");
+
+  for (let i = 0; i < arr.length; i++) {
+    link.innerHTML = arr[i];
+    if (img !== null) {
+      img.setAttribute("src", `images/${menuMobileImg[i]}`);
+    }
+    parrent.append(template.content.cloneNode(true));
+  }
+}
+
+renderCategoriesMenu(
+  menuCategoriesTempl,
+  menuCategories,
+  menuCategoriesParrent
+);
+
+renderCategoriesMenu(menuMobWithImgTempl, menuMobile, menuMobileParrent);
+
+renderCategoriesMenu(menuMobWithoutImgTempl, menuMobile, menuMobileParrent);
+
+renderCategoriesMenu(menuMobWithoutImgTempl, menuAdress, menuMobileParrent);
