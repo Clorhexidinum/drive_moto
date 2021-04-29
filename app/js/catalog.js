@@ -40,6 +40,7 @@ asideFilterBtn.forEach((elem) => {
 });
 
 let a = new Product(goodsList[0]);
+Y;
 const goodsOut = document.querySelector(".catalog__product-list");
 let cardTemlate = document.querySelector("#product");
 
