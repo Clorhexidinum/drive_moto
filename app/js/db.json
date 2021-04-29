@@ -1,23 +1,25 @@
 {
   "goods": {
-    "366666-1": {
+    {
+      "sku": "366666-1",
       "name": "BRP SeaDoo GTI 155hp SE Long Blue Metallic",
       "image": "gidrotsikl-1.png",
+      "availability": 1,
+      "rate": 0,
       "price": 1100475,
       "sale": 5,
-      "rate": 0,
-      "availability": 1,
-      "country": "Канада",
-      "numberOfPlaces": 3,
       "power": 155,
       "motor": "Бензиновый",
+      "fuelTank": 30,
       "release": 2018,
+      "country": "Канада",
       "length": 2790,
       "width": 1180,
       "weigth": 186,
-      "fuelTank": 30
+      "numberOfPlaces": 3
     },
-    "366666-2": {
+    {
+      "sku": "366666-2",
       "name": "BRP SeaDoo GTR 230hp X California blue",
       "image": "gidrotsikl-2.png",
       "price": 1323700,
@@ -34,7 +36,8 @@
       "weigth": 186,
       "fuelTank": 30
     },
-    "366666-3": {
+    {
+      "sku": "366666-3",
       "name": "BRP SeaDoo GTR 230hp X California green",
       "image": "gidrotsikl-3.png",
       "price": 1323700,
@@ -51,7 +54,8 @@
       "weigth": 186,
       "fuelTank": 30
     },
-    "366666-4": {
+    {
+      "sku": "366666-4",
       "name": "BRP SeaDoo GTR 230hp STD Black / Gulfstream",
       "image": "gidrotsikl-4.png",
       "price": 1443000,
@@ -68,7 +72,8 @@
       "weigth": 186,
       "fuelTank": 30
     },
-    "366666-5": {
+    {
+      "sku": "366666-5",
       "name": "BRP SeaDoo GTX 300hp LTD Liquid Metal",
       "image": "gidrotsikl-5.png",
       "price": 1543000,
@@ -85,7 +90,8 @@
       "weigth": 186,
       "fuelTank": 30
     },
-    "366666-6": {
+    {
+      "sku": "366666-6",
       "name": "BRP SeaDoo Spark 60hp 2 up",
       "image": "gidrotsikl-6.png",
       "price": 732345,
@@ -102,7 +108,8 @@
       "weigth": 186,
       "fuelTank": 30
     },
-    "366666-7": {
+    {
+      "sku": "366666-7",
       "name": "BRP SeaDoo Spark GTS 90hp Rental",
       "image": "gidrotsikl-7.png",
       "price": 857666,
@@ -119,7 +126,8 @@
       "weigth": 186,
       "fuelTank": 30
     },
-    "366666-8": {
+    {
+      "sku": "366666-8",
       "name": "BRP SeaDoo WAKE 230hp PRO Teal blue",
       "image": "gidrotsikl-8.png",
       "price": 1229711,
@@ -136,7 +144,8 @@
       "weigth": 186,
       "fuelTank": 30
     },
-    "366666-9": {
+    {
+      "sku": "366666-9",
       "name": "Spark 2-UP 900 Ho Ace Chili Pepper",
       "image": "gidrotsikl-9.png",
       "price": 587440,
@@ -153,7 +162,8 @@
       "weigth": 186,
       "fuelTank": 30
     },
-    "366666-10": {
+    {
+      "sku": "366666-10",
       "name": "Spark 2-UP 900 Ho Ace Pineapple",
       "image": "gidrotsikl-10.png",
       "price": 587440,
@@ -170,7 +180,8 @@
       "weigth": 186,
       "fuelTank": 30
     },
-    "366666-11": {
+    {
+      "sku": "366666-11",
       "name": "BRP Sea-doo Spark 2-UP 900 Ace Vanilla",
       "image": "gidrotsikl-11.png",
       "price": 750000,
@@ -187,7 +198,8 @@
       "weigth": 186,
       "fuelTank": 30
     },
-    "366666-12": {
+    {
+      "sku": "366666-12",
       "name": "Spark 3-UP 900 HO Ace IBR Blueberry",
       "image": "gidrotsikl-12.png",
       "price": 690000,
