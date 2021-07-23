@@ -13,7 +13,7 @@
     &::after {
       content: "";
       position: absolute;
-      background-image: url("../images/icon-price.svg");
+      background-image: url("/images/icon-price.svg");
       background-repeat: no-repeat;
       right: 0;
       top: 8px;
@@ -29,14 +29,14 @@
     line-height: $lh-extra-small;
     color: $additional;
     margin-right: 15px;
-    background-image: url("../images/old-line.svg");
+    background-image: url("/images/old-line.svg");
     padding: 2px 5px;
     background-repeat: no-repeat;
 
     &::after {
       content: "";
       position: absolute;
-      background-image: url("../images/icon-price-old.svg");
+      background-image: url("/images/icon-price-old.svg");
       background-repeat: no-repeat;
       right: -10px;
       top: 5px;
